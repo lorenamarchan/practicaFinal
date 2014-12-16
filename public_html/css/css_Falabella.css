@@ -31,13 +31,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     background-color: pink;
     position: relative;
 }
-#header{
+header{
     position: absolute;
     width: 1024px;
     height: 90px;
     background-color: #c0B184
 }
-#menu{
+nav{
     position: absolute;
     top:90px;
     width: 1024px;
@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     height: 383px;
     background-color: #FFFDDB;
 }
-#footer{
+footer{
     position: absolute;
     top: 515px;
     width: 1024px;
