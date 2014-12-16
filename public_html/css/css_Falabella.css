@@ -23,7 +23,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #wrapper{ /*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
-    text-align: center;
     width: 1024px;
     height: 600px;
     margin-left: auto;
@@ -59,11 +58,18 @@ footer{
     background-color: #c0B184; 
 }
 p{
- font-family: Calibri
+ font-family: Calibri;
+ color: black;    
 }
-#tituloPresentacion{
+#textoPresentacion{
+    position: absolute;
+    left: 340px;
+    top: 20px;
     font-family: Arial;
-    font-size: 35px;
+    font-size: 0.8em;
     color:brown;
+    text-align: center;
+    width: 300px;
+    height: 200px;
 }
 
