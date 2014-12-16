@@ -58,5 +58,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     height: 85px;
     background-color: #c0B184; 
 }
-
+p{
+ font-family: Calibri
+}
+#tituloPresentacion{
+    font-family: Arial;
+    font-size: 35px;
+    color:brown;
+}
 
