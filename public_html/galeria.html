@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
         <script type="text/javascript">
-            var imagenes = ["1", "2", "3", "4", "5", "6", "7", "8"];
+            var imagenes = ["1042348_90655159", "656971_42764352", "683172_79869176", "723161_75014920", "812018_47233105", "caballo1", "caballo2", "caballo3"];
             window.onload = galeria;
             function relleno(nombre) {
                 document.getElementById("big").innerHTML = '<img src="img/' + nombre + '" alt="' + nombre + '" title="' + nombre + '">';
@@ -40,69 +40,141 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             function galeria() {
                 for (var i = 0; i < imagenes.length; i++) {
                     var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
-                    document.getElementById("small").innerHTML += imagen;
+                    document.getElementById("imagenes").innerHTML += imagen;
                 }
+                for (var i = 0; i < imagenes.length; i++) {
+                    var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
+                    document.getElementById("imagenes").innerHTML += imagen;
+                }
+
             }
+
+            function mover(direccion) {
+                if (direccion == "izq") {
+                    document.getElementById('imagenes').style.animation = "moverizq 20s linear";
+                    document.getElementById('imagenes').style.WebkitAnimation = "moverizq 20s linear";
+                }
+                if (direccion == "der") {
+                    document.getElementById('imagenes').style.animation = "moverder 20s linear";
+                    document.getElementById('imagenes').style.WebkitAnimation = "moverder 20s linear";
+                }
+                document.getElementById('imagenes').style.animationPlayState = "running";
+                document.getElementById('imagenes').style.WebkitAnimationPlayState = "running";
+            }
+            function mover2() {
+                document.getElementById('imagenes').style.animationPlayState = "paused";
+                document.getElementById('imagenes').style.WebkitAnimationPlayState = "paused";
+            }
+
+
         </script>      
-        <style type="text/css">            
+        <style type="text/css"> 
+            h1{
+                font-family: 'titulos';
+                color: #433333;
+                padding: 40px 0px 0px 40px;
+            }
             #wrappergaleria{
+
                 position: relative;
-                width: 80%;
-                margin-left: 10%;
-                margin-right: 10%;
+                padding: 20px 0px;
+                width: 100%;
                 height:auto;
                 min-height:480px;
-                overflow: hidden;
-                border:solid 1px;
             }
-
             #wrappergaleria #small{   
                 position:relative;
-                width: 80%;
-                height:auto;
-                margin: 10% auto;
+                width: 984px;
+                height:80px;
+                margin: 0px auto;
                 overflow: hidden;
-                border: solid 1px;
             }
-
-            #wrappergaleria #small img{
-                border:solid 2px #06639e;
-                margin: 5px;
-                opacity: 0.7;
-                width: 80px;
-                height: auto;
-                vertical-align: bottom;
+            #imagenes{   
+                position: absolute;
+                left:25px;
+                width: 2000px;
+                height:80px; 
+                animation-play-state: paused;
+                -webkit-animation-play-state: paused;
             }
-
-            #wrappergaleria #small img:hover{opacity: 1;}
+            @keyframes moverizq{
+                0%{left:0px}
+                100%{left:-700px}
+            }
+            @-webkit-keyframes moverizq{
+                0%{left:0px}
+                100%{left:-700px}
+            }
+            @keyframes moverder{
+                0%{left:0px}
+                100%{left:1px}
+            }
+            @-webkit-keyframes moverder{
+                0%{left:0px}
+                100%{left:1px}
+            }
+            #wrappergaleria #imagenes img{
+                margin: 0px 2px;
+                width: auto;
+                height: 80px;
+            }
 
             #wrappergaleria #big{
                 position:relative;
                 width: auto;
-                height:100px;
-                margin: 10px auto;
+                height:400px;
+                margin: 0px auto;
                 overflow: hidden;
-                padding: 10px;
-                text-align: center;
+                padding: 10px 10px 50px 10px;
+                text-align: center;                
             }
 
-            #wrappergaleria #big img{
-                border:solid 2px #06639e;  
+            #wrappergaleria #big img{  
                 width: auto;
                 height: 100%;
             }
+            .flecha{
+                position: absolute;
+                height: 50px;
+                width: 10px;
+                background-color: #c0B184;
+                float: left;
+                z-index: 1;
+                cursor: pointer;
+                color: white;
+                font-size: 21px;
+                font-weight: bold;
+                padding: 30px 10px 0px 10px; 
+
+            }
+            .flecha.izq{left:0px;}
+            .flecha.der{right:0px;}
+
         </style>
     </head>
     <body>
         <div id="wrapper">
             <header></header>
-            <nav></nav>
+            <nav>
+                <ul id="navegador">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="home.html">Presentacion</a></li>
+                    <li><a href="home.html">Catalogo</a></li>
+                    <li><a href="home.html">Galeria</a></li>
+                    <li><a href="home.html">Contacta</a></li>
+                </ul>
+            </nav>
             <div id="main">
+                <h1>Galería de Fotos</h1>  
                 <div id="wrappergaleria"> 
                     <div id="big">
-                        <img src="img/1.jpg" alt="img/1.jpg" title="img/1.jpg">
+                        <img src="img/1042348_90655159.jpg" alt="1042348_90655159.jpg" title="1042348_90655159.jpg">
                     </div>     
-                    <div id="small"></div>   
+                    <div id="small">
+                        <div class="flecha izq" onmouseover="mover('izq')" onmouseout="mover2()"><</div>
+                        <div id="imagenes"></div>
+                        <div class="flecha der" onmouseover="mover('der')" onmouseout="mover2()">></div>
+                    </div>   
                 </div>        
             </div>
             <footer></footer>

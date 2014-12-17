@@ -22,54 +22,98 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#wrapper{ /*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
+
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: titulos;
+    src: url(../fuentes/IMFeFCsc28P.ttf) format('truetype');
+}
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: general;
+    src: url(../fuentes/PT_Serif-Web-Regular.ttf) format('truetype');
+}
+/*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
+#wrapper{
     width: 1024px;
-    height: 600px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: pink;
     position: relative;
-}
-header{
-    position: absolute;
-    width: 1024px;
-    height: 90px;
-    background-color: #c0B184
-}
-nav{
-    position: absolute;
-    top:90px;
-    width: 1024px;
-    height: 42px;
-    background-color: #E5D6A7; 
-}
-#main{
-    position: absolute;
-    top:132px;
-    width: 1024px;
-    height: 383px;
+    background-color: #FFFDDB;
+    border: 1px #433333 solid;
     background-color: #FFFDDB;
 }
-footer{
-    position: absolute;
-    top: 515px;
+/*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
+header{
+    position: relative;
     width: 1024px;
-    height: 85px;
-    background-color: #c0B184; 
+    height: 100px;
+    background-color: #c0B184;
 }
-p{
- font-family: Calibri;
- color: black;    
+/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+nav{
+    position: relative;
+    width: 1024px;
+    height: 40px;
+    margin: 0;
+    background-color: #433333;
+    border-top: 0.5em solid #70624C;
+    border-bottom: 0.5em solid #70624C;
 }
-#textoPresentacion{
-    position: absolute;
-    left: 340px;
-    top: 20px;
-    font-family: Arial;
-    font-size: 0.8em;
-    color:brown;
-    text-align: center;
-    width: 300px;
-    height: 200px;
+/*Estilo del ul*/
+ul{
+    margin: 0;
+    padding: 0;
 }
-
+/*Posicion de las listas*/
+ul#navegador li {
+    float:left;
+    list-style:none;    
+}
+/*Caracteristicas de cada elemento de la lista*/
+ul#navegador li a {
+    padding: 8px 35px 8px 35px;
+    display:block;
+    text-decoration:none;
+    color: #FFFDDB;
+    font-size: 18px;
+    font-family: titulos;
+}
+/*Estilo para que cambie el color al pasar por encima*/
+ul#navegador li a:hover {
+    background: #70624C;
+    border-bottom: 0.6em solid #70624C;
+}
+/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+footer{
+    position: relative;
+    width: 1024px;
+    height: 90px;
+    background-color: #c0B184;
+}
+/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+#main{
+    width: 1024px;
+    min-height: 400px;
+    height: auto;
+}
+#formulario{
+    width: 60%;
+    margin: 0 0 0 60px;
+    font-family: general;
+    font-size: 14px;
+    color: #433333;
+}
+#titulo_form{
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: titulos;
+    //font-size: 24px;
+}
+#intro_form{
+    padding: 0px 0 10px 0;
+}
+#form{
+    padding-bottom: 20px;
+}
