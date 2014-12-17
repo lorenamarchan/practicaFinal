@@ -43,17 +43,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
                     document.getElementById("imagenes").innerHTML += imagen;
                 }
+                for (var i = 0; i < imagenes.length; i++) {
+                    var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
+                    document.getElementById("imagenes").innerHTML += imagen;
+                }
+
             }
+            
+//            
         </script>      
         <style type="text/css">            
             #wrappergaleria{
                 position: relative;
-                width: 80%;
-                margin: 0px 10%;
+                width: 100%;
                 height:auto;
                 min-height:480px;
-                overflow: hidden;
-                border:solid 1px;
             }
             #wrappergaleria #small{   
                 position:relative;
@@ -63,10 +67,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 overflow: hidden;
             }
             #wrappergaleria #imagenes{   
-                float:left;
-                width: calc(100% - 60px);
-                height:80px;
-                overflow: hidden;
+                position: absolute;
+                left:25px;
+                width: 2000px;
+                height:80px; 
             }
 
             #wrappergaleria #imagenes img{
@@ -90,11 +94,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 height: 100%;
             }
             .flecha{
+                position: absolute;
                 height: 100%;
                 width: 30px;
                 background-color: #c0B184;
                 float: left;
+                z-index: 1;
+                cursor: pointer;
             }
+            .flecha.izq{left:0px; animation: izq 15s;}
+            .flecha.der{right:0px;}
+            
         </style>
     </head>
     <body>
@@ -107,9 +117,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <img src="img/1042348_90655159.jpg" alt="1042348_90655159.jpg" title="1042348_90655159.jpg">
                     </div>     
                     <div id="small">
-                        <div class="flecha"><</div>
+                        <div class="flecha izq"></div>
                         <div id="imagenes"></div>
-                        <div class="flecha">></div>
+                        <div class="flecha der"></div>
                     </div>   
                 </div>        
             </div>
