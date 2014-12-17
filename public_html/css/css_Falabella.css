@@ -1,0 +1,99 @@
+/* 
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=09-dic-2014
+Licencia=gpl30
+Version=1.0
+Descripcion=hoja de estilos de la practica de una pagina we de hipica
+*/
+
+/*
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: titulos;
+    src: url(../fuentes/IMFeFCsc28P.ttf) format('truetype');
+}
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: general;
+    src: url(../fuentes/PT_Serif-Web-Regular.ttf) format('truetype');
+}
+ /*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
+#wrapper{
+    width: 1024px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px #433333 solid;
+}
+ /*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
+header{
+    position: relative;
+    width: 1024px;
+    height: 100px;
+    background-color: #c0B184;
+}
+ /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+nav{
+    position: relative;
+    width: 1024px;
+    height: 40px;
+    margin: 0;
+    background-color: #433333;
+    border-top: 0.5em solid #70624C;
+    border-bottom: 0.5em solid #70624C;
+}
+/*Estilo del ul*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*Posicion de las listas*/
+ul#navegador li {
+    float:left;
+    list-style:none;    
+}
+/*Caracteristicas de cada elemento de la lista*/
+ul#navegador li a {
+    padding: 8px 35px 8px 35px;
+    display:block;
+    text-decoration:none;
+    color: #FFFDDB;
+    font-size: 18px;
+    font-family: titulos;
+}
+/*Estilo para que cambie el color al pasar por encima*/
+ul#navegador li a:hover {
+    background: #70624C;
+    border-bottom: 0.6em solid #70624C;
+}
+ /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+footer{
+    position: relative;
+    width: 1024px;
+    height: 90px;
+    background-color: #c0B184;
+}
+ /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+#main{
+    width: 1024px;
+    min-height: 400px;
+    height: auto;
+    background-color: #FFFDDB;
+}

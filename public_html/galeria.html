@@ -1,0 +1,129 @@
+
+<!--
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=12-dic-2014
+Licencia=gpl30
+Version=1.0
+Descripcion=Pagina Galeria para la práctica de una Página Web de un centro de Hípica.
+-->
+
+<!--
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel=stylesheet href="css/css_Falabella.css">
+        <script type="text/javascript">
+            var imagenes = ["1042348_90655159", "656971_42764352", "683172_79869176", "723161_75014920", "812018_47233105", "caballo1", "caballo2", "caballo3"];
+            window.onload = galeria;
+
+            function relleno(nombre) {
+                document.getElementById("big").innerHTML = '<img src="img/' + nombre + '" alt="' + nombre + '" title="' + nombre + '">';
+            }
+            function galeria() {
+                for (var i = 0; i < imagenes.length; i++) {
+                    var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
+                    document.getElementById("imagenes").innerHTML += imagen;
+                }
+                for (var i = 0; i < imagenes.length; i++) {
+                    var imagen = '<a href="javascript:void(0);" onclick="relleno(\'' + imagenes[i] + '.jpg\');"><img src="img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg"></a>';
+                    document.getElementById("imagenes").innerHTML += imagen;
+                }
+
+            }
+            
+//            
+        </script>      
+        <style type="text/css">            
+            #wrappergaleria{
+                position: relative;
+                width: 100%;
+                height:auto;
+                min-height:480px;
+            }
+            #wrappergaleria #small{   
+                position:relative;
+                width: 80%;
+                height:80px;
+                margin: 20px auto;
+                overflow: hidden;
+            }
+            #wrappergaleria #imagenes{   
+                position: absolute;
+                left:25px;
+                width: 2000px;
+                height:80px; 
+            }
+
+            #wrappergaleria #imagenes img{
+                margin: 0px 5px;
+                width: auto;
+                height: 80px;
+            }
+
+            #wrappergaleria #big{
+                position:relative;
+                width: auto;
+                height:400px;
+                margin: 20px auto;
+                overflow: hidden;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #wrappergaleria #big img{  
+                width: auto;
+                height: 100%;
+            }
+            .flecha{
+                position: absolute;
+                height: 100%;
+                width: 30px;
+                background-color: #c0B184;
+                float: left;
+                z-index: 1;
+                cursor: pointer;
+            }
+            .flecha.izq{left:0px; animation: izq 15s;}
+            .flecha.der{right:0px;}
+            
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header></header>
+            <nav></nav>
+            <div id="main" style="height:auto">
+                <div id="wrappergaleria"> 
+                    <div id="big">
+                        <img src="img/1042348_90655159.jpg" alt="1042348_90655159.jpg" title="1042348_90655159.jpg">
+                    </div>     
+                    <div id="small">
+                        <div class="flecha izq"></div>
+                        <div id="imagenes"></div>
+                        <div class="flecha der"></div>
+                    </div>   
+                </div>        
+            </div>
+            <footer></footer>
+        </div>       
+    </body>
+</html>
