@@ -49,12 +49,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 }
 
             }
-            
-//            
+
+            function mover(direccion) {
+                if (direccion == "izq") {
+                    document.getElementById('imagenes').style.left = "-900px";
+                }
+                if (direccion == "der") {
+                    document.getElementById('imagenes').style.left = "0px";
+                }
+            }
+
+
         </script>      
         <style type="text/css">            
             #wrappergaleria{
                 position: relative;
+                padding: 20px 0px;
                 width: 100%;
                 height:auto;
                 min-height:480px;
@@ -63,18 +73,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 position:relative;
                 width: 80%;
                 height:80px;
-                margin: 20px auto;
+                margin: 0px auto;
                 overflow: hidden;
             }
-            #wrappergaleria #imagenes{   
+            #imagenes{   
                 position: absolute;
                 left:25px;
                 width: 2000px;
                 height:80px; 
+                transition: left 10s linear;
+                -webkit-transition: left 10s linear;
             }
-
+            @keyframes mover{
+                0%{left:0px}
+                100%{left:-700px}
+            }
             #wrappergaleria #imagenes img{
-                margin: 0px 5px;
+                margin: 0px 2px;
                 width: auto;
                 height: 80px;
             }
@@ -83,10 +98,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 position:relative;
                 width: auto;
                 height:400px;
-                margin: 20px auto;
+                margin: 0px auto;
                 overflow: hidden;
                 padding: 10px;
                 text-align: center;
+                animation: mover 15s;
             }
 
             #wrappergaleria #big img{  
@@ -95,31 +111,44 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             }
             .flecha{
                 position: absolute;
-                height: 100%;
-                width: 30px;
+                height: 50px;
+                width: 10px;
                 background-color: #c0B184;
                 float: left;
                 z-index: 1;
                 cursor: pointer;
+                color: white;
+                font-size: 21px;
+                font-weight: bold;
+                padding: 30px 10px 0px 10px; 
+
             }
-            .flecha.izq{left:0px; animation: izq 15s;}
+            .flecha.izq{left:0px;}
             .flecha.der{right:0px;}
-            
+
         </style>
     </head>
     <body>
         <div id="wrapper">
             <header></header>
-            <nav></nav>
+            <nav>
+                <ul id="navegador">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="home.html">Presentacion</a></li>
+                    <li><a href="home.html">Catalogo</a></li>
+                    <li><a href="home.html">Galeria</a></li>
+                    <li><a href="home.html">Contacta</a></li>
+                </ul>
+            </nav>
             <div id="main" style="height:auto">
                 <div id="wrappergaleria"> 
                     <div id="big">
                         <img src="img/1042348_90655159.jpg" alt="1042348_90655159.jpg" title="1042348_90655159.jpg">
                     </div>     
                     <div id="small">
-                        <div class="flecha izq"></div>
+                        <div class="flecha izq" onmouseover="mover('izq')"><</div>
                         <div id="imagenes"></div>
-                        <div class="flecha der"></div>
+                        <div class="flecha der" onmouseover="mover('der')">></div>
                     </div>   
                 </div>        
             </div>
