@@ -29,8 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: pink;
-    position: relative; 
+    position: relative;
     border: 1px #433333 solid;
 }
  /*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
@@ -44,8 +43,34 @@ header{
 nav{
     position: relative;
     width: 1024px;
-    height: 50px;
+    height: 40px;
+    margin: 0;
     background-color: #433333;
+    border-top: 0.5em solid #70624C;
+    border-bottom: 0.5em solid #70624C;
+}
+/*Estilo del ul*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*Posicion de las listas*/
+ul#navegador li {
+    float:left;
+    list-style:none;    
+}
+/*Caracteristicas de cada elemento de la lista*/
+ul#navegador li a {
+    padding: 8px 35px 8px 35px;
+    display:block;
+    text-decoration:none;
+    color: #FFFDDB;
+    font-size: 18px;
+}
+/*Estilo para que cambie el color al pasar por encima*/
+ul#navegador li a:hover {
+    background: #70624C;
+    border-bottom: 0.6em solid #70624C;
 }
  /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 footer{
