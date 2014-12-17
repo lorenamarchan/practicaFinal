@@ -38,7 +38,7 @@ header{
 }
 #main{
     width: 1024px;
-    height: 42px;
+    min-height: 383px;
     background-color: #E5D6A7; 
 }
 
