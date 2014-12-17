@@ -30,7 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     margin-left: auto;
     margin-right: auto;
     background-color: pink;
-    position: relative;    
+    position: relative; 
+    border: 1px #433333 solid;
 }
  /*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
 header{
@@ -43,7 +44,7 @@ header{
 nav{
     position: relative;
     width: 1024px;
-    height: 55px;
+    height: 50px;
     background-color: #433333;
 }
  /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
