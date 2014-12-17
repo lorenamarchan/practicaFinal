@@ -45,7 +45,63 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </ul>
             </nav>
             <div id="main">
-                
+                <div id="formulario">
+                    <h1 id="titulo_form">Contacte con nosotros</h1>
+                    <p id="intro_form">Para cualquier duda o sugerencia rellene el formulario que aparece a continuacion.<br>
+                    Recuerde que todos los campos (*) tienen que estar rellenos correctamente.</p>
+                    <form id="form" method="post" action="" onsubmit="return validacion()">
+                        <table>
+                            <tr>
+                                <td>Nombre(*):</td>
+                                <td><input type="text" id="nombre" oninput="compruebaCampos()" required ><br></td>
+                            </tr>
+                            <tr>
+                                <td>1º Apellido(*):</td>
+                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                            </tr>
+                            <tr>
+                                <td>2º Apellido(*):</td>
+                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                            </tr>
+                            <tr>
+                                <td>Email(*):</td>
+                                <td><input type="text" id="email" oninput="compruebaCampos()" required=""><br></td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono Fijo:</td>
+                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" required><br></td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono Móvil(*):</td>
+                                <td><input type="text" id="tlf_movil" oninput="compruebaCampos()" required><br></td>
+                            </tr>
+                            <tr><td>Asunto(*)</td>
+                                <td>
+                                    <select id="asuntos" onchange="compruebaCampos()" required>
+                                        <option value='' selected>--Seleccione Asunto--</option>
+                                        <option value='Tarifas'>Tarifas</option>
+                                        <option value='Federarse'>Federarse</option>
+                                        <option value='Pupilaje'>Pupilaje</option>
+                                        <option value='Otros asuntos'>Otros asuntos</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align='left'>Comentarios(*):</td>
+                                <td><textarea id="clave" oninput="compruebaCampos()" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" id="condiciones" oninput="compruebaCampos()" required>
+                                    Acepta las condiciones y termminos</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type='submit' id="envio" value="Enviar datos" disabled></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>    
             </div>
             <footer></footer>
         </div>   
