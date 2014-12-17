@@ -24,35 +24,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #wrapper{ /*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
     width: 1024px;
-    height: 600px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: pink;
     position: relative;
 }
 header{
-    position: absolute;
+    position: relative;
     width: 1024px;
     height: 90px;
     background-color: #c0B184
 }
 nav{
-    position: absolute;
-    top:90px;
+    position: relative;
     width: 1024px;
     height: 42px;
     background-color: #E5D6A7; 
 }
 #main{
-    position: absolute;
-    top:132px;
+    position: relative;
     width: 1024px;
-    height: 383px;
-    background-color: #FFFDDB;
+    min-height: 380px;
+    overflow: hidden;
+    background-color: #FFFDDC;
 }
 footer{
-    position: absolute;
-    top: 515px;
+    position: relative;
     width: 1024px;
     height: 85px;
     background-color: #c0B184; 
