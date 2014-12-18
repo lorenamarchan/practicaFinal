@@ -33,7 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-family: general;
     src: url(../fuentes/PT_Serif-Web-Regular.ttf) format('truetype');
 }
-/*En este estilo definimos el tamaño, los margenes, y la alineación del lienzo */
+/*En este estilo definimos el tamaño, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
     height: auto;
@@ -47,9 +47,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
 header{
     position: relative;
-    width: 1024px;
-    height: 100px;
+    width: 1014px;
+    height: 90px;
     background-color: #c0B184;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 nav{
