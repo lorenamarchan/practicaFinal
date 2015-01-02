@@ -33,6 +33,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-family: general;
     src: url(../fuentes/PT_Serif-Web-Regular.ttf) format('truetype');
 }
+body,root,html{
+    margin: 0;
+    padding: 0;
+    font-family: general;
+    color: #70624C;
+    font-size: 14px;
+}    
+h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
+h2{padding: 40px 0px 0px 40px;}
+
+
 /*En este estilo definimos el tamaño, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
@@ -62,7 +73,7 @@ nav{
     background-color: #433333;
     border-top: 0.5em solid #70624C;
     border-bottom: 0.5em solid #70624C;
-}
+} 
 /*Estilo del ul*/
 ul{
     margin: 0;
@@ -91,27 +102,40 @@ ul#navegador li a:hover {
 footer{
     position: relative;
     width: 1024px;
-    height: 90px;
     background-color: #c0B184;
+    font-size: 13px;
+    line-height: 20px;
+    color: #70624C;
+    height:auto;
+    overflow: hidden;    
+    text-align: center;
+    padding: 10px 0px;
 }
+
+/*Estilo donde definimos el tamaño, los margenes y el color de las migas de pan */
+#migas{
+    margin: 40px 0px 20px 40px;
+    font-size: 12px;                
+} 
+#migas a, footer a{
+    color: #70624C;
+}
+
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
     min-height: 400px;
     height: auto;
 }
+
 #formulario{
     width: 60%;
     margin: 0 0 0 60px;
-    font-family: general;
-    font-size: 14px;
-    color: #433333;
 }
 #titulo_form{
     margin-top: 0;
     padding-top: 20px;
     font-family: titulos;
-    //font-size: 24px;
 }
 #intro_form{
     padding: 0px 0 10px 0;
@@ -119,3 +143,54 @@ footer{
 #form{
     padding-bottom: 20px;
 }
+
+/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+#galeria section h3{
+    width: 90%;
+    border-bottom: solid 1px;
+    margin: 40px 0px 0px 40px;
+    color: #70624C;
+}
+
+#galeria section div{
+    position: relative;
+    width: 85%;
+    margin: 30px auto;
+    height:auto;
+    overflow: hidden;
+}
+
+#galeria section .imagen{   
+    float: left;
+    width: 120px;
+    height:120px; 
+    margin: 5px;
+    overflow: hidden;
+    border: solid 5px #c0B184;
+    transition: border 1s, opacity 1s;
+    opacity: .75;
+}
+#galeria section .imagen:hover{
+    border-color: #70624C;
+    opacity: 1;
+} 
+
+#galeria section .imagen img{   
+    width: 150%;
+    height: auto;
+}
+/*para la seccion de licencias*/
+input[type=button]{
+    background-color: #FFFDDB;
+    color: #70624C;
+    border: solid 2px #70624C;
+    border-radius: 7px;
+    min-width: 60px;
+    height: 30px;
+    cursor: pointer;
+    margin: 15px 0;
+} 
+input[type=button]:hover{
+    background-color: #70624C;
+    color: #FFFDDB;
+} 
