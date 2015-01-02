@@ -53,102 +53,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 }
             }
             function nVentana(){
-                var nv=window.open("licencia.html","nventana","height=380 width=480");
+                var nv=window.open("licencia.html","nventana","height=600 width=600");
             }
 
         </script>
-
-        <style type="text/css">  
-            body,root,html{
-                margin: 0;
-                padding: 0;
-                font-family: general;
-            }            
-            h2{
-                font-family: 'titulos';
-                color: #433333;
-                padding: 40px 0px 0px 40px;
-            }
-            #galeria section h3,footer section h4{
-                font-family: 'titulos';
-                color: #70624C;
-            }
-            #galeria section h3{
-                width: 90%;
-                border-bottom: solid 1px;
-                margin: 40px 0px 0px 40px;
-            }
-
-            #galeria section div{
-                position: relative;
-                width: 85%;
-                margin: 30px auto;
-                height:auto;
-                overflow: hidden;
-            }
-            footer{
-                font-family: 'general';
-                font-size: 13px;
-                line-height: 24px;
-                text-align: center;
-                color: #70624C;
-                height:auto;
-                overflow: hidden;                
-            }
-            
-            footer section {
-                float:left;
-                width: 20%; 
-                text-align: left;
-                padding: 0 6%;
-                color: #70624C;
-                height: 100%;
-            }
-            footer .separador{
-                border-left: 1px solid rgba(112, 98, 76, 0.3);
-                height: 100%;
-                width: 1px;
-                float: left;
-            }
-
-            footer section h4{font-size: 15px;margin:10px auto;}
-
-            #galeria section .imagen{   
-                float: left;
-                left: 20px;
-                width: 120px;
-                height:120px; 
-                margin: 5px;
-                overflow: hidden;
-                border: solid 5px #c0B184;
-                transition: border 1s, opacity 1s;
-                opacity: .75;
-            }
-            #galeria section .imagen:hover{
-                border-color: #70624C;
-                opacity: 1;
-
-            } 
-            #wrapperfooter{
-                width: 940px;
-                height: 145px;
-                overflow: hidden;
-                margin: 20px auto;      
-            }
-
-            #galeria section .imagen img{   
-                width: 150%;
-                height: auto;
-            }
-            #migas{
-                margin: 40px 0px 20px 40px;
-                font-size: 12px;                
-            } 
-            #migas, #migas a, footer a{
-                color: #70624C;
-            }
-            #migas span{color: #433333; font-weight: bold}            
-        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -163,7 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </ul>
             </nav>
             <div id="main">
-                <div id="migas"><a href="#">Inicio</a><span> > </span>Galería de Fotos</div>
+                <div id="migas"><a href="#">Inicio</a> > Galería de Fotos</div>
                 <div id="galeria">
                     <h2>Galería de Fotos</h2> 
                     <section>
@@ -181,10 +89,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
                 </div>
             </div>
-            <footer>
-                
-                <p>Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                    <a href="#" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
+            <footer>                
+                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
             </footer>
         </div>       
     </body>
