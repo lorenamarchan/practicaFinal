@@ -38,6 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </script>
     </head>
     <body>
+        <script type="text/javascript" src="js/validaciones.js"></script> 
         <div id="wrapper">
             <header></header>
             <nav>
@@ -50,40 +51,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </ul>
             </nav>
             <div id="main">
-                <div id="migas"><a href="index.html">Inicio</a> > Formulario</div>
+                <div id="migas"><a href="index.html">Inicio</a> > Contacta</div>
                 <div id="formulario">
                     <h1 id="titulo_form">Contacte con nosotros</h1>
                     <p id="intro_form">Para cualquier duda o sugerencia rellene el formulario que aparece a continuacion.<br>
                     Recuerde que todos los campos (*) tienen que estar rellenos correctamente.</p>
-                    <form id="form" method="post" action="" onsubmit="return validacion()">
+                    <form id="form" action="" onsubmit="return validacion()">
                         <table>
                             <tr>
                                 <td>Nombre *:</td>
-                                <td><input type="text" id="nombre" oninput="compruebaCampos()" required ><br></td>
+                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required ><br></td>
                             </tr>
                             <tr>
                                 <td>1º Apellido *:</td>
-                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr>
                                 <td>2º Apellido *:</td>
-                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr>
                                 <td>Email *:</td>
-                                <td><input type="text" id="email" oninput="compruebaCampos()" required=""><br></td>
+                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required=""><br></td>
                             </tr>
                             <tr>
                                 <td>Teléfono Fijo:</td>
-                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="tlf_fijo"  oninput="compruebaCampos()"><br></td>
                             </tr>
                             <tr>
                                 <td>Teléfono Móvil *:</td>
-                                <td><input type="text" id="tlf_movil" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr><td>Asunto *</td>
                                 <td>
-                                    <select id="asuntos" onchange="compruebaCampos()" required>
+                                    <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required>
                                         <option value='' selected>--Seleccione Asunto--</option>
                                         <option value='Tarifas'>Tarifas</option>
                                         <option value='Federarse'>Federarse</option>
@@ -98,7 +99,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><input type="checkbox" id="condiciones" oninput="compruebaCampos()" required>
+                                <td><input type="checkbox" id="condiciones" onchange="activarEnviar()" disabled>
                                     Acepta las condiciones y termminos</td>
                             </tr>
                             <tr>
