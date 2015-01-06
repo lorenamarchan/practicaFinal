@@ -31,20 +31,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
+        <script type="text/javascript">
+            function nVentana(){
+                var nv=window.open("licencia.html","nventana","height=600 width=600");
+            }
+        </script>
     </head>
     <body>
         <div id="wrapper">
             <header></header>
             <nav>
                 <ul id="navegador">
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="home.html">Presentacion</a></li>
-                    <li><a href="home.html">Catalogo</a></li>
-                    <li><a href="home.html">Galeria</a></li>
-                    <li><a href="home.html">Contacta</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="formulario.html">Contacta</a></li>
                 </ul>
             </nav>
             <div id="main">
+                <div id="migas"><a href="index.html">Inicio</a> > Formulario</div>
                 <div id="formulario">
                     <h1 id="titulo_form">Contacte con nosotros</h1>
                     <p id="intro_form">Para cualquier duda o sugerencia rellene el formulario que aparece a continuacion.<br>
@@ -103,7 +109,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </form>
                 </div>    
             </div>
-            <footer></footer>
+            <footer>                
+                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
+            </footer>
         </div>   
     </body>
 </html>
