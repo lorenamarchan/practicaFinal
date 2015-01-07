@@ -23,7 +23,7 @@ Descripcion=Funciones para comprobar y validar los datos del formulario
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+window.onload = galerias;
 
 function galerias() {
                 var imagenesClases = ["clases1", "clases2", "clases3", "clases4", "clases5", "clases6", "clases7", "clases8", "clases9", "clases10", "clases11"];
