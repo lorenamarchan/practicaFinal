@@ -32,41 +32,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
         <link rel="stylesheet" href="css/lightbox.css">
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script src="js/lightbox.js"></script>
-        <script type="text/javascript">
-            window.onload = galerias;
-            function galerias() {
-                var imagenesClases = ["clases1", "clases2", "clases3", "clases4", "clases5", "clases6", "clases7", "clases8", "clases9", "clases10", "clases11"];
-                var imagenesRutas = ["ruta1", "ruta2", "ruta3", "ruta4", "ruta5", "ruta6"];
-                var imagenesEstablecimiento = ["caballo1", "caballo2", "caballo3", "caballo4", "caballo5", "caballo6", "caballo7", "caballo8"];
-                rellenoGalerias('clases', imagenesClases);
-                rellenoGalerias('rutas', imagenesRutas);
-                rellenoGalerias('establecimiento', imagenesEstablecimiento);
-            }
-
-            function rellenoGalerias(grupo, imagenes) {
-                for (var i = 0; i < imagenes.length; i++) {
-                    var imagen = '<img src="img/galeria_img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg">';
-                    var divsimagen = '<div class="imagen"><a href="img/galeria_img/' + imagenes[i] + '.jpg" data-lightbox="' + grupo + '">';
-                    document.getElementById(grupo).innerHTML += divsimagen + imagen + '</a></div>';
-                }
-            }
-            function nVentana(){
-                var nv=window.open("licencia.html","nventana","height=600 width=600");
-            }
-
-        </script>
+        <script type="text/javascript"  src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript"  src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/galeria.js"></script>
     </head>
     <body>
         <div id="wrapper">
-            <header></header>
+            <header><img src="img/logotipo_fallabella.png" id="logotipo"></header>
             <nav>
                 <ul id="navegador">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="presentacion.html">Presentación</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
+                    <li class="pag_seleccionada"><a href="galeria.html">Galería</a></li>
                     <li><a href="formulario.html">Contacta</a></li>
                 </ul>
             </nav>
