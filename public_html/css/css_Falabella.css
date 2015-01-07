@@ -64,6 +64,13 @@ header{
     padding-top: 10px;
     padding-left: 10px;
 }
+/*Estilo donde definimos el tamaño, y posicion del logotipo */
+#logotipo{
+    width: 255px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
@@ -97,6 +104,14 @@ ul#navegador li a {
 ul#navegador li a:hover {
     background: #70624C;
     border-bottom: 0.6em solid #70624C;
+}
+/*Estilo para que cambie el color al pasar por encima*/
+ .pag_seleccionada{
+    background: #70624C;
+    border-bottom: 0.3em solid #70624C;
+}
+ .pag_seleccionada:hover{
+    border-bottom: 0;
 }
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 footer{
