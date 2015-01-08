@@ -122,7 +122,7 @@ ul#navegador li a:hover {
 .pag_seleccionada:hover{
     border-bottom: 0;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaño, los margenes y el color del footer */
 footer{
     position: relative;
     width: 1024px;
@@ -136,6 +136,8 @@ footer{
     padding: 10px 0px;
 }
 
+/*ESTILO PARA LAS MIGAS DE PAN*/
+
 /*Estilo donde definimos el tamaño, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
@@ -144,36 +146,64 @@ footer{
 #migas a, footer a{
     color: #70624C;
 }
-
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
     min-height: 400px;
     height: auto;
 }
+
+/*ESTILO PARA EL INDEX*/
+
+/*Posicion para el titulo del index*/
 #titulo_inicio{
     margin: -40px 0 10px -60px;
     padding: 0 0 0 0;
+    font-size: 38px;
 }
+/*Posicion para el subtitulo del index*/
 #subtitulo_inicio{
     margin: 0px 0 0 -60px;
     padding: 0 0 0 0;
+    font-size: 24px;
 }
+/* Estilo de la imagén en inicio */
+#ImagenIndex{
+    float: left;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('../img/Entrada.png');
+    width: 620px;
+    height: 500px;
+    top: 80px;
+    padding-left: 100px;
+    margin: 0 0 0 0;
+}
+
+/*ESTILO PARA EL FORMULARIO*/
+
+/*Estilo para el formulario*/
 #formulario{
     width: 60%;
     margin: 0 0 0 60px;
 }
+/*Estilo y posicion para el titulo del formulario*/
 #titulo_form{
     margin-top: 0;
     padding-top: 20px;
     font-family: titulos;
 }
+/*Posicion para la introducion del formulario*/
 #intro_form{
     padding: 0px 0 10px 0;
 }
+/*Margen del formulario*/
 #form{
     padding-bottom: 20px;
 }
+
+/*ESTILO PARA LA GALERIA*/
 
 /*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
 #galeria section h3{
@@ -182,7 +212,7 @@ footer{
     margin: 40px 0px 0px 40px;
     color: #70624C;
 }
-
+/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
@@ -190,7 +220,7 @@ footer{
     height:auto;
     overflow: hidden;
 }
-
+/*Estilo de las imagenes de la galeria */
 #galeria section .imagen{   
     float: left;
     width: 120px;
@@ -201,11 +231,12 @@ footer{
     transition: border 1s, opacity 1s;
     opacity: .75;
 }
+/*Estilo de las imagenes de la galeria cuando pasamos por encima */
 #galeria section .imagen:hover{
     border-color: #70624C;
     opacity: 1;
 } 
-
+/*Estilo de las imagenes de la galeria */
 #galeria section .imagen img{   
     width: 150%;
     height: auto;
@@ -225,6 +256,9 @@ input[type=button]:hover{
     background-color: #70624C;
     color: #FFFDDB;
 }
+
+/*ESTILO PARA EL BANNER*/
+
 /* Estilo para el banner */
 #banner{
     width: 300px;
@@ -240,7 +274,6 @@ input[type=button]:hover{
     height: 400px;
     margin: 0 auto;
     position: absolute;
-    //z-index: 0;
     background-image: url(../img/animacion/cielo.png);
     background-size: 100% 100%;
     background-repeat: repeat;
@@ -264,7 +297,6 @@ input[type=button]:hover{
     position: relative;
     background-image: url('../img/animacion/cesped.png');
     background-size: 100% 100%;
-    //z-index: 0;
 }
 /* Estilo general para los caballos */
 .caballos{
@@ -281,8 +313,8 @@ input[type=button]:hover{
     height: 100px;
     margin: -180px 0 0 -20px;
     background-image: url('../img/animacion/caballo_cuerpo.png');
-    animation: ani_caballo_1 7s infinite linear;
-    -webkit-animation: ani_caballo_1 7s infinite linear;
+    animation: ani_caballo_1 5s infinite linear;
+    -webkit-animation: ani_caballo_1 5s infinite linear;
 }
 /* Animacion para el 1 caballo (Firefox)*/
 @keyframes ani_caballo_1{
@@ -292,16 +324,16 @@ input[type=button]:hover{
 }
 /* Animacion para el 1 caballo (Chrome)*/
 @-webkit-keyframes ani_caballo_1{
-    0% {transform: rotate(5deg);left: -30%;}
-    50% {transform: rotate(-5deg);left: 50%;}
-    100% {transform: rotate(5deg);left: 130%;}
+    0% {transform: rotate(-5deg);left: -30%;}
+    50% {transform: rotate(5deg);left: 50%;}
+    100% {transform: rotate(-5deg);left: 130%;}
 }
 /* Estilo para el 2 caballo */
 #caballo_2{
     margin: -130px 0 0 -20px;
     background-image: url('../img/animacion/caballo_cuerpo_2.png');
-    animation: ani_caballo_2 10s infinite linear;
-    -webkit-animation: ani_caballo_2 10s infinite linear;
+    animation: ani_caballo_2 7s infinite linear;
+    -webkit-animation: ani_caballo_2 7s infinite linear;
 }
 /* Animacion para el 2 caballo (Firefox)*/
 @keyframes ani_caballo_2{
@@ -311,9 +343,9 @@ input[type=button]:hover{
 }
 /* Animacion para el 2 caballo (Chrome)*/
 @-webkit-keyframes ani_caballo_2{
-    0% {transform: rotate(5deg); right: -30%;}
-    50% {transform: rotate(-5deg); right: 50%;}
-    100% {transform: rotate(5deg); right: 130%;}
+    0% {transform: rotate(-5deg); right: -30%;}
+    50% {transform: rotate(5deg); right: 50%;}
+    100% {transform: rotate(-5deg); right: 130%;}
 }
 /* Estilo general para las piernas */
 .piernas{
@@ -420,6 +452,9 @@ input[type=button]:hover{
     0% {transform: scale(0)}
     100% {transform: scale(1)}                   
 }
+
+/*ESTILO PARA LA PRESENTACION*/
+
 /* Estilo que define, la alineacio, el tipo de letra, el ancho del texto. */
 #texto_presentacion{
     float: left;
@@ -441,7 +476,6 @@ input[type=button]:hover{
     -webkit-animation: AnimacionCaballoDer 4s;
     animation: AnimacionCaballoDer 4s; /*para FireFox*/
     transform: scaleX(-1);
-
 }
 @-webkit-keyframes AnimacionCaballoDer {
     0%   {opacity: 0.1}
@@ -451,16 +485,4 @@ input[type=button]:hover{
     0% {opacity: 0.1}
     100%{opacity: 1 }
 }
-/* Estilo de la imagén en inicio */
-#ImagenIndex{
-    float: left;
-    background-size: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-image: url('../img/Entrada.png');
-    width: 620px;
-    height: 500px;
-    top: 80px;
-    padding-left: 100px;
-    margin: 0 0 0 0;
-}
+
