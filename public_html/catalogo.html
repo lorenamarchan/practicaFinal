@@ -31,13 +31,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
+        <script src="js/general.js"></script>
         <script type="text/javascript">
-            function nVentana() {
-                var nv = window.open("licencia.html", "nventana", "height=600 width=600");
+            function expandir(n, obj) {
+                
+                if (document.getElementById("art_" + n).style.height > "70px") {
+                    document.getElementById("art_" + n).style.height = "70px";
+                    obj.value = "mas info";
+                }
+                else {
+                    document.getElementById("art_" + n).style.height = "auto";
+                    obj.value = "menos info";
+                }
             }
 
         </script>
         <style>
+            body{
+                background: url(img/1368772_75767553.jpg) fixed;
+                background-size:  auto 100%;
+
+            }
+            #wrapper{
+                box-shadow: 0px 0px 60px #000;
+            }
             .imag{
                 width: 150px;
                 height: 150px;
@@ -50,10 +67,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 height: auto;
             }
             article{
-                border-bottom: solid 1px #c0B184;
-                margin: 50px 80px;
+                /*                border-bottom: solid 1px #c0B184;*/
+                margin: 80px 80px;
                 padding-bottom: 20px;
                 overflow: hidden;
+                border-left:  solid 10px;
+                padding: 0px 20px;
             }
             article table{
                 text-align: center;
@@ -75,6 +94,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             article th.ext, article td.ext{
                 border: none;
             }
+            .descripcion{
+                width: 100%;
+                height: 70px;
+                border-bottom: solid 1px #c0B184;
+                overflow: hidden;
+                transition: height 1s linear;
+                -webkit-transition: height 1s linear;
+            }
+
+            input{
+                font-family: 'general';
+                float: right;
+                font-size: 12px;
+            }
 
         </style>
     </head>
@@ -94,19 +127,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <div id="migas"><a href="index.html">Inicio</a> > Catálogo</div>
                 <h2>Catálogo de Actividades</h2>                     
                 <article>                        
-                    <div class="imag"><img src="img/galeria_img/ruta5.jpg"></div>
                     <h3>Rutas a Caballo</h3>
-                    Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, y dsifrutar de unos momentos llenos de aventura y diversión. 
-
+                    <div class="descripcion" id="art_1">
+                        <p>Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, usted podrá descubrir, 
+                            de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
+                            y dsifrutar de unos momentos llenos de aventura y diversión. </p>
+                        <p>Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, usted podrá descubrir, 
+                            de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
+                            y dsifrutar de unos momentos llenos de aventura y diversión. </p>
+                    </div>
+                    <input type="button" onclick="expandir('1', this)" value="mas info">
                     <table>
                         <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">L-V: 9.00h - 20.00h</td><td>1h - 2h - 4h</td><td>Para todas las Edades</td><td>40€/h</td><td class="ext">Disponible</td></tr>
+                        <tr><td class="ext">L-D: 9.00h - 20.00h</td><td>1h - 2h - 4h</td><td>Para todas las Edades</td><td>40€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>   
                 <article>                        
-                    <div class="imag"><img src="img/galeria_img/clases8.jpg"></div>
                     <h3>Hipódromo</h3>
-                    Nuestro hipodromo esta compuesto de arena apta para disputar carreras de caballos. El interior tiene gradas en el perímetro, y el centro está formado de tierra o hierba. En el centro se dispone un óvalo bordeando las gradas que forma la pista.Ideal para practicas individuales de equitacion. 
+                    <div class="descripcion" id="art_2">
+                        <p>Nuestro hipodromo esta compuesto de arena apta para disputar carreras de caballos. 
+                            El interior tiene gradas en el perímetro, y el centro está formado de tierra o hierba. 
+                            En el centro se dispone un óvalo bordeando las gradas que forma la pista.
+                            Ideal para practicas individuales de equitacion. </p>
+                        <p>Nuestro hipodromo esta compuesto de arena apta para disputar carreras de caballos. 
+                            El interior tiene gradas en el perímetro, y el centro está formado de tierra o hierba. 
+                            En el centro se dispone un óvalo bordeando las gradas que forma la pista.
+                            Ideal para practicas individuales de equitacion. </p>
+                    </div>
+                    <input type="button" onclick="expandir('2', this)" value="mas info">
 
                     <table>
                         <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
@@ -114,40 +162,58 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </table>
                 </article>        
                 <article>                        
-                    <div class="imag"><img src="img/galeria_img/clases1.jpg"></div>
                     <h3>Enseñanza para Adultos</h3>
-                    Ofrecemos nuestros conocimientos para clases de equitación, tanto a nivel iniciación como avanzado.
-                    Teoría
+                    <div class="descripcion" id="art_3">
+                        <p>Ofrecemos nuestros conocimientos para clases de equitación, tanto a nivel iniciación como avanzado.
+                            Teoría
+                            Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.
+                            Material de herraje normal y de emergencia
+                            Como debe ser un herraje correcto
+                            Puede estar mi caballo descalzo?? Que es el barehoof
+                            Practicas
+                            Como coger los miembros del caballo con seguridad
+                            Desherrar y volver a clavar</p>
+                        <p>Ofrecemos nuestros conocimientos para clases de equitación, tanto a nivel iniciación como avanzado.
+                            Teoría
+                            Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.
+                            Material de herraje normal y de emergencia
+                            Como debe ser un herraje correcto
+                            Puede estar mi caballo descalzo?? Que es el barehoof
+                            Practicas
+                            Como coger los miembros del caballo con seguridad
+                            Desherrar y volver a clavar</p>
+                    </div>
+                    <input type="button" onclick="expandir('3', this)" value="mas info">
 
-                    Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.
-                    Material de herraje normal y de emergencia
-                    Como debe ser un herraje correcto
-                    Puede estar mi caballo descalzo?? Que es el barehoof
-                    Practicas
-
-                    Como coger los miembros del caballo con seguridad
-                    Desherrar y volver a clavar
                     <table>
                         <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
                         <tr><td class="ext">L-V: 18.00h - 20.00h</td><td>1 hora</td><td>Mayores de 18 años</td><td>20€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>  
                 <article>                        
-                    <div class="imag"><img src="img/galeria_img/ruta2.jpg"></div>
                     <h3>Enseñanza para Niños Grupo 2</h3>
-                                        Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, y dsifrutar de unos momentos llenos de aventura y diversión. 
-
-
+                    <div class="descripcion" id="art_4">
+                        <p>Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, 
+                            usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
+                            y dsifrutar de unos momentos llenos de aventura y diversión. </p>
+                        <p>Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, 
+                            usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
+                            y dsifrutar de unos momentos llenos de aventura y diversión. </p>
+                    </div>
+                    <input type="button" onclick="expandir('4', this)" value="mas info">
                     <table>
                         <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
                         <tr><td class="ext">L-V: 17.00h - 18.00h</td><td>1 hora</td><td>9 a 14 años</td><td>15€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>   
                 <article>                        
-                    <div class="imag"><img src="img/galeria_img/ruta2.jpg"></div>
                     <h3>Enseñanza para Niños Grupo 1</h3>
-                                        Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, y dsifrutar de unos momentos llenos de aventura y diversión. 
-
+                    <div class="descripcion" id="art_5">
+                    <p>Gracias a nuestros paseos a caballo por los alrededores del  Parque Nacional de la sierra de Guadarrama, 
+                        usted podrá descubrir, de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
+                        y dsifrutar de unos momentos llenos de aventura y diversión. </p>
+                    </div>
+                    <input type="button" onclick="expandir('5', this)" value="mas info">
                     <table>
                         <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
                         <tr><td class="ext">L-V: 16.00h - 17.00h</td><td>1 hora</td><td>5 a 9 años</td><td>10€/h</td><td class="ext">Disponible</td></tr>
