@@ -32,122 +32,46 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
         <link rel="stylesheet" href="css/lightbox.css">
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script src="js/lightbox.js"></script>
-        <script type="text/javascript">
-            window.onload = galerias;
-            function galerias() {
-                var imagenesClases = ["1042348_90655159", "656971_42764352", "812018_47233105", "caballo2","1042348_90655159", "656971_42764352", "812018_47233105", "caballo2"];
-                var imagenesRutas = ["683172_79869176", "723161_75014920","683172_79869176", "723161_75014920","683172_79869176", "723161_75014920"];
-                var imagenesEstablecimiento = ["caballo1", "caballo3","caballo1", "caballo3","caballo1", "caballo3"];
-                rellenoGalerias('clases', imagenesClases);
-                rellenoGalerias('rutas', imagenesRutas);
-                rellenoGalerias('establecimiento', imagenesEstablecimiento);
-            }
-
-            function rellenoGalerias(grupo, imagenes) {
-                for (var i = 0; i < imagenes.length; i++) {
-                    var imagen = '<img src="img/galeria_img/' + imagenes[i] + '.jpg" alt="' + imagenes[i] + '.jpg" title="' + imagenes[i] + '.jpg">';
-                    var divsimagen = '<div class="imagen"><a href="img/galeria_img/' + imagenes[i] + '.jpg" data-lightbox="' + grupo + '">';
-                    document.getElementById(grupo).innerHTML += divsimagen + imagen + '</a></div>';
-                }
-            }
-
-        </script>
-
-        <style type="text/css">  
-            body,root,html{
-                margin: 0;
-                padding: 0;
-                font-family: general;
-                background: url('img/galeria_img/812018_47233105.jpg') repeat;
-                background-attachment: fixed;
-            }
-            h1{
-                font-family: 'titulos';
-                color: #433333;
-                padding: 40px 0px 0px 40px;
-            }
-            h3.galerias{
-                font-family: 'titulos';
-                color: #70624C;
-                width: 90%;
-                border-bottom: solid 1px;
-                margin: 40px 0px 0px 40px;
-            }
-
-            .galeria{
-                position: relative;
-                width: 85%;
-                margin: 30px auto;
-                height:auto;
-                overflow: hidden;
-            }
-
-            .imagen{   
-                float: left;
-                left: 20px;
-                width: 120px;
-                height:120px; 
-                margin: 5px;
-                overflow: hidden;
-                border: solid 5px #c0B184;
-                transition: border 1s, opacity 1s;
-                opacity: .75;
-            }
-            .imagen:hover{
-                border-color: #70624C;
-                opacity: 1;
-
-            } 
-
-            .imagen img{   
-                width: 150%;
-                height: auto;
-            }
-            #migas{
-                margin: 40px 0px 20px 40px;
-                font-size: 12px;                
-            } 
-            #migas, #migas a{
-                color: #70624C;
-            }
-            #migas span{color: #433333; font-weight: bold}
-            #logo{
-                width: 70px;
-                height: 40px;
-                background-color: #433333;
-            }
-
-        </style>
+        <script type="text/javascript"  src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript"  src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/galeria.js"></script>
     </head>
     <body>
-        <div id="wrapper" style="border:none">
-            <header><div id='logo'></div></header>
+        <div id="wrapper">
+            <header><img src="img/logotipo_fallabella.png" id="logotipo"></header>
             <nav>
                 <ul id="navegador">
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="home.html">Presentación</a></li>
-                    <li><a href="home.html">Catálogo</a></li>
-                    <li><a href="home.html">Galería</a></li>
-                    <li><a href="home.html">Contacta</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li class="pag_seleccionada"><a href="galeria.html">Galería</a></li>
+                    <li><a href="formulario.html">Contacta</a></li>
                 </ul>
             </nav>
             <div id="main">
-                <div id="migas"><a href="#">Inicio</a><span> > </span>Galería de Fotos</div>
-                <h1>Galería de Fotos</h1>  
-                <h3 class="galerias">Clases de Hípica</h3> 
-                <div class="galeria" id="clases"> 
-                </div>
-                <h3 class="galerias">Paseos y Rutas</h3> 
-                <div class="galeria" id="rutas">
-                </div>   
-                <h3 class="galerias">Establecimiento</h3> 
-                <div class="galeria" id="establecimiento">
-                </div> 
+                <div id="migas"><a href="#">Inicio</a> > Galería de Fotos</div>
+                <div id="galeria">
+                    <h2>Galería de Fotos</h2> 
+                    <section>
+                        <h3>Clases de Hípica</h3> 
+                        <div id="clases"></div>
+                    </section>
+                    <section>
+                        <h3>Paseos y Rutas</h3> 
+                        <div id="rutas"></div>
+                    </section>
+                    <section>
+                        <h3>Establecimiento</h3> 
+                        <div id="establecimiento"></div> 
+                    </section>
 
+                </div>
             </div>
-            <footer></footer>
+            <footer>                
+                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
+            </footer>
         </div>       
     </body>
 </html>
