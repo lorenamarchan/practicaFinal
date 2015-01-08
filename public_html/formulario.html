@@ -31,11 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
-        <script type="text/javascript">
-            function nVentana(){
-                var nv=window.open("licencia.html","nventana","height=600 width=600");
-            }
-        </script>
+        <script type="text/javascript" src="js/general.js"></script>
     </head>
     <body>
         <script type="text/javascript" src="js/validaciones.js"></script> 
@@ -97,7 +93,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             </tr>
                             <tr>
                                 <td align='left'>Comentarios *:</td>
-                                <td><textarea id="clave" oninput="compruebaCampos()" rows="8" cols="35" required></textarea></td>
+                                <td><textarea id="clave" name="requeridos" oninput="compruebaCampos()" rows="8" cols="35" required></textarea></td>
                             </tr>
                             <tr>
                                 <td></td>

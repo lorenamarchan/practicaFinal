@@ -39,11 +39,20 @@ body,root,html{
     font-family: general;
     color: #70624C;
     font-size: 14px;
+    background-image: url('../img/Fondo.jpg');
 }    
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 h2{padding: 40px 0px 0px 40px;}
 
-
+a:link{
+    color: #70624C;
+}
+a:hover{
+    color: #433333;
+}
+a:visited{
+    color: #433333;
+}
 /*En este estilo definimos el tamaño, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
@@ -106,11 +115,11 @@ ul#navegador li a:hover {
     border-bottom: 0.6em solid #70624C;
 }
 /*Estilo para que cambie el color al pasar por encima*/
- .pag_seleccionada{
+.pag_seleccionada{
     background: #70624C;
     border-bottom: 0.3em solid #70624C;
 }
- .pag_seleccionada:hover{
+.pag_seleccionada:hover{
     border-bottom: 0;
 }
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
@@ -216,7 +225,7 @@ input[type=button]:hover{
     float: right;
     position: relative;
     overflow: hidden;
-    border: 2px #262775 solid;
+    border: 1px #433333 solid;
 }
 /* Estilo y animacion para el cielo */
 #cielo{
@@ -403,4 +412,48 @@ input[type=button]:hover{
 @-webkit-keyframes ani_letras{
     0% {transform: scale(0)}
     100% {transform: scale(1)}                   
+}
+/* Estilo que define, la alineacio, el tipo de letra, el ancho del texto. */
+#texto_presentacion{
+    float: left;
+    font-family: general;
+    margin-left: 60px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+/* Estilo de la imagén y animación del caballo en presentación */
+#CaballoDer{
+    float: right;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    width: 300px;
+    height: 350px;
+    background-image: url('../img/caballos.png');
+    -webkit-animation: AnimacionCaballoDer 4s;
+    animation: AnimacionCaballoDer 4s; /*para FireFox*/
+    transform: scaleX(-1);
+
+}
+@-webkit-keyframes AnimacionCaballoDer {
+    0%   {opacity: 0.1}
+    100% {opacity: 1 }
+}
+@keyframes AnimacionCaballoDer {  /*para FireFox*/
+    0% {opacity: 0.1}
+    100%{opacity: 1 }
+}
+/* Estilo de la imagén en inicio */
+#ImagenIndex{
+    float: left;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('../img/Entrada.png');
+    width: 620px;
+    height: 500px;
+    top: 80px;
+    padding-left: 100px;
+    margin: 0 0 0 0;
 }
