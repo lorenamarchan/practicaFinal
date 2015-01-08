@@ -32,68 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
         <script src="js/general.js"></script>
-        <script type="text/javascript">
-            function expandir(n, obj) {
-
-                if (document.getElementById("art_" + n).style.height > "70px") {
-                    document.getElementById("art_" + n).style.height = "70px";
-                    obj.value = "mas info";
-                }
-                else {
-                    document.getElementById("art_" + n).style.height = "auto";
-                    obj.value = "menos info";
-                }
-            }
-
-        </script>
-        <style>
-            body{
-                background: url(img/1368772_75767553.jpg) fixed;
-                background-size:  auto 100%;
-
-            }
-            #wrapper{
-                box-shadow: 0px 0px 60px #000;
-            }
-            
-            
-            article{
-                margin: 80px 80px;
-                padding-bottom: 20px;
-                overflow: hidden;
-                border-left:  solid 10px;
-                padding: 0px 20px;
-            }
-            article table{
-                text-align: center;
-                border-collapse: collapse;
-                margin-top:20px;
-            }
-            article h3{
-                margin-top: 0px;
-            }
-            article th{
-                font-family: titulos;
-                font-size: 16px;
-            }   
-            article th, article td{
-                padding:4px 15px;
-                border-left: solid 1px #c0B184;
-                border-right: solid 1px #c0B184;
-            }
-            article th.ext, article td.ext{
-                border: none;
-            }
-            .descripcion{
-                width: 100%;
-                height: 70px;
-                border-bottom: solid 1px #c0B184;
-                overflow: hidden;
-            }
-
-            article input{float: right;font-size: 12px;}
-
-        </style>
+        <script type="text/javascript" src="js/general.js"></script>        
     </head>
     <body>
         <div id="wrapper">
@@ -109,8 +48,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </nav>
             <div id="main">
                 <div id="migas"><a href="index.html">Inicio</a> > Catálogo</div>
-                <h2>Catálogo de Actividades</h2>                     
-                <article>                        
+                
+                <h2>Catálogo de Actividades</h2>    
+                
+                <article class="catalogo">                        
                     <h3>Rutas a Caballo</h3>
                     <div class="descripcion" id="art_1">
                         <p>Rutas desde dos horas, de un día entero, fin de semana o incluso varios dias tanto en la Sierra de madrid como en otros lugares de la peninsula, pernoctando en confortables hoteles y casas rurales.
@@ -134,7 +75,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <tr><td class="ext">L-D: 9.00h - 20.00h</td><td>1h - 2h - 4h</td><td>Para todas las Edades</td><td>40€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>   
-                <article>                        
+                <article class="catalogo">                        
                     <h3>Hipódromo</h3>
                     <div class="descripcion" id="art_2">
                         <p>Nuestro hipodromo esta compuesto de arena apta para disputar carreras de caballos. 
@@ -156,7 +97,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <tr><td class="ext">M-X-V: 12.00h - 16.00h</td><td>4 horas</td><td>Mayores de 18 años</td><td>10€/h</td><td class="ext"><strike>No Disponible</strike></td></tr>
                     </table>
                 </article>        
-                <article>                        
+                <article class="catalogo">                      
                     <h3>Enseñanza para Adultos</h3>
                     <div class="descripcion" id="art_3">
                         <p>Damos clases de equitación particulares y en grupo para adultos. <br>
@@ -184,7 +125,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <tr><td class="ext">L-V: 18.00h - 20.00h</td><td>1h ~1h 30min</td><td>Mayores de 18 años</td><td>20€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>  
-                <article>                        
+                <article class="catalogo">                       
                     <h3>Enseñanza para Niños Grupo 2</h3>
                     <div class="descripcion" id="art_4">
                         <p>Damos clases de equitación particulares y en grupo para niños de entre 9 y 14 años. <br>
@@ -211,7 +152,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <tr><td class="ext">L-V: 17.00h - 18.00h</td><td>1 hora</td><td>9 a 14 años</td><td>15€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article>   
-                <article>                        
+                <article class="catalogo">                     
                     <h3>Enseñanza para Niños Grupo 1</h3>
                     <div class="descripcion" id="art_5">
                         <p>Damos clases de equitación particulares y en grupo para niños de entre 5 y 9 años. <br>
@@ -238,8 +179,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <tr><td class="ext">L-V: 16.00h - 17.00h</td><td>1 hora</td><td>5 a 9 años</td><td>10€/h</td><td class="ext">Disponible</td></tr>
                     </table>
                 </article> 
-
-
             </div>
             <footer>                
                 Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
