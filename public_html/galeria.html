@@ -1,0 +1,77 @@
+
+<!--
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=12-dic-2014
+Licencia=gpl30
+Version=1.0
+Descripcion=Pagina Galeria para la práctica de una Página Web de un centro de Hípica.
+-->
+
+<!--
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel=stylesheet href="css/css_Falabella.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script type="text/javascript"  src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript"  src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/galeria.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header><img src="img/logotipo_fallabella.png" id="logotipo"></header>
+            <nav>
+                <ul id="navegador">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li class="pag_seleccionada"><a href="galeria.html">Galería</a></li>
+                    <li><a href="formulario.html">Contacta</a></li>
+                </ul>
+            </nav>
+            <div id="main">
+                <div id="migas"><a href="#">Inicio</a> > Galería de Fotos</div>
+                <div id="galeria">
+                    <h2>Galería de Fotos</h2> 
+                    <section>
+                        <h3>Clases de Hípica</h3> 
+                        <div id="clases"></div>
+                    </section>
+                    <section>
+                        <h3>Paseos y Rutas</h3> 
+                        <div id="rutas"></div>
+                    </section>
+                    <section>
+                        <h3>Establecimiento</h3> 
+                        <div id="establecimiento"></div> 
+                    </section>
+
+                </div>
+            </div>
+            <footer>                
+                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
+            </footer>
+        </div>       
+    </body>
+</html>
