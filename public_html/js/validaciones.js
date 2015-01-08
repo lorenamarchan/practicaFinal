@@ -74,12 +74,25 @@ function validaTelf() {
 
     var valorNum = document.getElementById("tlf_movil").value;
 
-    if (!(/^(6|9){1}[0-9]{8}$/.test(valorNum)) || valorNum === '') {
+    if (!(/^(6){1}[0-9]{8}$/.test(valorNum))) {
 
-        alert("El campo tiene que ser numérico y tiene que tener 9 cifras");
+        alert("El campo tiene que ser numérico y tiene que ser un numero de movil");
         document.getElementById("tlf_movil").value = '';
         return false;
     } else {
+        return true;
+    }
+}
+function validarEmail()
+{
+    var email = document.getElementById("email").value;
+
+    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/).test(email)){
+        
+        alert('El email introducido es incorrecto');
+        document.getElementById("email").value = '';
+        return false;        
+    }else {
         return true;
     }
 }
@@ -88,7 +101,7 @@ function validaTelf() {
  */
 function validacion() {
 
-    if (validaTelf() === true) {
+    if (validaTelf() === true && validaEmail() === true) {
         
         var confirmacion=window.open("confirmacion.html","confirmaion","height=250 width=425");
         return true;
