@@ -66,9 +66,8 @@ function activarEnviar() {
     }
 }
 /**
- * Funcion para validar el telefono mediante 
- * una expresion regular que solo permitira numeros
- * y que empieze por 6 o 9
+ * Funcion para validar el telefono mediante una expresion 
+ * regular que solo permitira numeros y que empieze por 6
  */
 function validaTelf() {
 
@@ -76,32 +75,33 @@ function validaTelf() {
 
     if (!(/^(6){1}[0-9]{8}$/.test(valorNum))) {
 
-        alert("El campo tiene que ser numérico y tiene que ser un numero de movil");
+        alert("Introduce un numero de movil correcto");
         document.getElementById("tlf_movil").value = '';
         return false;
-    } else {
-        return true;
     }
+    return true;
 }
+/**
+ * Funcion para validar el email mediante una expresion 
+ * regular que nos asegurara que sea un email valido
+ */
 function validarEmail()
 {
     var email = document.getElementById("email").value;
-
-    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/).test(email)){
         
+    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){    
         alert('El email introducido es incorrecto');
         document.getElementById("email").value = '';
         return false;        
-    }else {
-        return true;
     }
+    return true;
 }
 /**
  * Funcion para comprobar todos las validaciones anteriores
  */
 function validacion() {
 
-    if (validaTelf() === true && validaEmail() === true) {
+    if (validaTelf() === true && validarEmail() === true) {
         
         var confirmacion=window.open("confirmacion.html","confirmaion","height=250 width=425");
         return true;
