@@ -225,7 +225,7 @@ input[type=button]:hover{
     float: right;
     position: relative;
     overflow: hidden;
-    border: 2px #262775 solid;
+    border: 1px #433333 solid;
 }
 /* Estilo y animacion para el cielo */
 #cielo{
