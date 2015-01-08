@@ -114,11 +114,11 @@ ul#navegador li a:hover {
     border-bottom: 0.6em solid #70624C;
 }
 /*Estilo para que cambie el color al pasar por encima*/
- .pag_seleccionada{
+.pag_seleccionada{
     background: #70624C;
     border-bottom: 0.3em solid #70624C;
 }
- .pag_seleccionada:hover{
+.pag_seleccionada:hover{
     border-bottom: 0;
 }
 /*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
@@ -411,4 +411,35 @@ input[type=button]:hover{
 @-webkit-keyframes ani_letras{
     0% {transform: scale(0)}
     100% {transform: scale(1)}                   
+}
+/* Estilo que define, la alineacio, el tipo de letra, el ancho del texto. */
+#texto_presentacion{
+    float: left;
+    font-family: general;
+    margin-left: 60px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+/* Estilo de la imagén y animación del caballo en presentación */
+#CaballoDer{
+    float: right;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    width: 300px;
+    height: 350px;
+    background-image: url('img/caballos.png');
+    -webkit-animation: AnimacionCaballoDer 4s;
+    animation: AnimacionCaballoDer 4s; /*para FireFox*/
+    transform: scaleX(-1);
+
+}
+@-webkit-keyframes AnimacionCaballoDer {
+    0%   {opacity: 0.1}
+    100% {opacity: 1 }
+}
+@keyframes AnimacionCaballoDer {  /*para FireFox*/
+    0% {opacity: 0.1}
+    100%{opacity: 1 }
 }
