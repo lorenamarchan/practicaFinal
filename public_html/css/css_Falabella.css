@@ -57,19 +57,3 @@ footer{
     height: 85px;
     background-color: #c0B184; 
 }
-p{
- font-family: Calibri;
- color: black;    
-}
-#textoPresentacion{
-    position: absolute;
-    left: 340px;
-    top: 20px;
-    font-family: Arial;
-    font-size: 0.8em;
-    color:brown;
-    text-align: center;
-    width: 300px;
-    height: 200px;
-}
-
