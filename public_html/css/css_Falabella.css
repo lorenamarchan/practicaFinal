@@ -40,6 +40,7 @@ body,root,html{
     color: #70624C;
     font-size: 14px;
     background-image: url('../img/Fondo.jpg');
+    background-size: 100% auto;
 }    
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 h2{padding: 40px 0px 0px 40px;}
