@@ -39,8 +39,9 @@ body,root,html{
     font-family: general;
     color: #70624C;
     font-size: 14px;
-    background-image: url('../img/Fondo.jpg');
-    background-size: 100% auto;
+    background: url(../img/fondo.jpg) fixed;
+    background-size: auto 100%;
+    background-color: #664F30;
 }    
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 h2{padding: 40px 0px 0px 40px;}
@@ -54,7 +55,7 @@ a:hover{
 a:visited{
     color: #433333;
 }
-/*En este estilo definimos el tamaño, los margenes, y la alineacion del lienzo */
+/*En este estilo definimos el tamaÃƒÂ±o, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
     height: auto;
@@ -64,8 +65,9 @@ a:visited{
     background-color: #FFFDDB;
     border: 1px #433333 solid;
     background-color: #FFFDDB;
+    box-shadow: 0px 0px 60px #000;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la cabezera */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de la cabezera */
 header{
     position: relative;
     width: 1014px;
@@ -74,14 +76,14 @@ header{
     padding-top: 10px;
     padding-left: 10px;
 }
-/*Estilo donde definimos el tamaño, y posicion del logotipo */
+/*Estilo donde definimos el tamaÃƒÂ±o, y posicion del logotipo */
 #logotipo{
     width: 255px;
     height: auto;
     margin-top: 10px;
     margin-left: 10px;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
     width: 1024px;
@@ -103,7 +105,7 @@ ul#navegador li {
 }
 /*Caracteristicas de cada elemento de la lista*/
 ul#navegador li a {
-    padding: 8px 35px 8px 35px;
+    padding: 10px 35px 10px 35px;
     display:block;
     text-decoration:none;
     color: #FFFDDB;
@@ -113,7 +115,6 @@ ul#navegador li a {
 /*Estilo para que cambie el color al pasar por encima*/
 ul#navegador li a:hover {
     background: #70624C;
-    border-bottom: 0.6em solid #70624C;
 }
 /*Estilo para que cambie el color al pasar por encima*/
 .pag_seleccionada{
@@ -123,7 +124,7 @@ ul#navegador li a:hover {
 .pag_seleccionada:hover{
     border-bottom: 0;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color del footer */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color del footer */
 footer{
     position: relative;
     width: 1024px;
@@ -139,7 +140,7 @@ footer{
 
 /*ESTILO PARA LAS MIGAS DE PAN*/
 
-/*Estilo donde definimos el tamaño, los margenes y el color de las migas de pan */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
     font-size: 12px;                
@@ -147,7 +148,7 @@ footer{
 #migas a, footer a{
     color: #70624C;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
     min-height: 400px;
@@ -168,7 +169,7 @@ footer{
     padding: 0 0 0 0;
     font-size: 24px;
 }
-/* Estilo de la imagén en inicio */
+/* Estilo de la imagÃƒÂ©n en inicio */
 #ImagenIndex{
     float: left;
     background-size: 100%;
@@ -206,14 +207,14 @@ footer{
 
 /*ESTILO PARA LA GALERIA*/
 
-/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de la pagina de galeria */
 #galeria section h3{
     width: 90%;
     border-bottom: solid 1px;
     margin: 40px 0px 0px 40px;
     color: #70624C;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaÃƒÂ±o, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
@@ -242,7 +243,7 @@ footer{
     width: 150%;
     height: auto;
 }
-/*para la seccion de licencias*/
+/*estilo para los botones de tipo input*/
 input[type=button]{
     background-color: #FFFDDB;
     color: #70624C;
@@ -252,6 +253,8 @@ input[type=button]{
     height: 30px;
     cursor: pointer;
     margin: 15px 0;
+    font-family: 'general';
+
 } 
 input[type=button]:hover{
     background-color: #70624C;
@@ -464,7 +467,7 @@ input[type=button]:hover{
     width: 400px;
     padding-bottom: 20px;
 }
-/* Estilo de la imagén y animación del caballo en presentación */
+/* Estilo de la imagÃƒÂ©n y animaciÃƒÂ³n del caballo en presentaciÃƒÂ³n */
 #CaballoDer{
     float: right;
     background-size: 100%;
@@ -487,3 +490,46 @@ input[type=button]:hover{
     100%{opacity: 1 }
 }
 
+/*ESTILO PARA EL CATALOGO*/
+
+/* Estilo de cada apartado del catalogo (de cada actividad))*/
+article.catalogo{
+    margin: 40px 80px 80px 80px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    border-left:  solid 10px;
+    padding: 0px 20px;
+}
+
+/* Estilo de la tabla de cada apartado del catalogo (de cada actividad))*/
+article.catalogo table{
+    text-align: center;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+/* Estilo del titulo de cada apartado del catalogo (de cada actividad))*/
+article.catalogo h3{ margin-top: 0px; }
+/* Estilo del tituo de la tabla de cada apartado del catalogo (de cada actividad))*/
+article.catalogo th{
+    font-family: titulos;
+    font-size: 16px;
+}   
+
+/* Estilo de los bordes de la tabla de cada apartado del catalogo (de cada actividad))*/
+article.catalogo th, article.catalogo td{
+    padding:4px 15px;
+    border-left: solid 1px #c0B184;
+    border-right: solid 1px #c0B184;
+}
+/* Estilo de los bordes de los elementos externos de la tabla de cada apartado del catalogo (de cada actividad))*/
+article.catalogo th.ext, article.catalogo td.ext{ border: none; }
+/* Estilo del texto de cada apartado del catalogo (de cada actividad))*/
+article.catalogo .descripcion{
+    width: 100%;
+    height: 70px;
+    border-bottom: solid 1px #c0B184;
+    overflow: hidden;
+}
+
+/* Estilo del boton input de cada apartado del catalogo (de cada actividad))*/
+article.catalogo input{float: right;font-size: 12px;}
