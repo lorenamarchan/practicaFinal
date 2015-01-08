@@ -31,53 +31,62 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
+        <script type="text/javascript">
+            function nVentana(){
+                var nv=window.open("licencia.html","nventana","height=600 width=600");
+            }
+        </script>
     </head>
     <body>
+        <script type="text/javascript" src="js/validaciones.js"></script> 
         <div id="wrapper">
-            <header></header>
+            <header>
+                <img src="img/logotipo_fallabella.png" id="logotipo">
+            </header>
             <nav>
                 <ul id="navegador">
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="home.html">Presentacion</a></li>
-                    <li><a href="home.html">Catalogo</a></li>
-                    <li><a href="home.html">Galeria</a></li>
-                    <li><a href="home.html">Contacta</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li class="pag_seleccionada"><a href="formulario.html">Contacta</a></li>
                 </ul>
             </nav>
             <div id="main">
+                <div id="migas"><a href="index.html">Inicio</a> > Contacta</div>
                 <div id="formulario">
                     <h1 id="titulo_form">Contacte con nosotros</h1>
                     <p id="intro_form">Para cualquier duda o sugerencia rellene el formulario que aparece a continuacion.<br>
                     Recuerde que todos los campos (*) tienen que estar rellenos correctamente.</p>
-                    <form id="form" method="post" action="" onsubmit="return validacion()">
+                    <form id="form" action="" onsubmit="return validacion()">
                         <table>
                             <tr>
                                 <td>Nombre *:</td>
-                                <td><input type="text" id="nombre" oninput="compruebaCampos()" required ><br></td>
+                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required ><br></td>
                             </tr>
                             <tr>
                                 <td>1º Apellido *:</td>
-                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr>
                                 <td>2º Apellido *:</td>
-                                <td><input type="text" id="apellidos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr>
                                 <td>Email *:</td>
-                                <td><input type="text" id="email" oninput="compruebaCampos()" required=""><br></td>
+                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required=""><br></td>
                             </tr>
                             <tr>
                                 <td>Teléfono Fijo:</td>
-                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="tlf_fijo"  oninput="compruebaCampos()"><br></td>
                             </tr>
                             <tr>
                                 <td>Teléfono Móvil *:</td>
-                                <td><input type="text" id="tlf_movil" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required><br></td>
                             </tr>
                             <tr><td>Asunto *</td>
                                 <td>
-                                    <select id="asuntos" onchange="compruebaCampos()" required>
+                                    <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required>
                                         <option value='' selected>--Seleccione Asunto--</option>
                                         <option value='Tarifas'>Tarifas</option>
                                         <option value='Federarse'>Federarse</option>
@@ -88,11 +97,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             </tr>
                             <tr>
                                 <td align='left'>Comentarios *:</td>
-                                <td><textarea id="clave" oninput="compruebaCampos()" required></textarea></td>
+                                <td><textarea id="clave" oninput="compruebaCampos()" rows="8" cols="35" required></textarea></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><input type="checkbox" id="condiciones" oninput="compruebaCampos()" required>
+                                <td><input type="checkbox" id="condiciones" onchange="activarEnviar()" disabled>
                                     Acepta las condiciones y termminos</td>
                             </tr>
                             <tr>
@@ -103,7 +112,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </form>
                 </div>    
             </div>
-            <footer></footer>
+            <footer>                
+                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="formulario.html">Contacta con Nosotros</a>
+            </footer>
         </div>   
     </body>
 </html>
