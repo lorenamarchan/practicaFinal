@@ -152,11 +152,11 @@ footer{
     height: auto;
 }
 #titulo_inicio{
-    margin: 0 0 0 20px;
+    margin: -40px 0 10px -60px;
     padding: 0 0 0 0;
 }
 #subtitulo_inicio{
-    margin: 0 0 0 30px;
+    margin: 0px 0 0 -60px;
     padding: 0 0 0 0;
 }
 #formulario{
@@ -292,9 +292,9 @@ input[type=button]:hover{
 }
 /* Animacion para el 1 caballo (Chrome)*/
 @-webkit-keyframes ani_caballo_1{
-    0% {transform: rotate(0deg);left: -30%;}
-    50% {transform: rotate(5deg);left: 50%;}
-    100% {transform: rotate(0deg);left: 130%;}
+    0% {transform: rotate(5deg);left: -30%;}
+    50% {transform: rotate(-5deg);left: 50%;}
+    100% {transform: rotate(5deg);left: 130%;}
 }
 /* Estilo para el 2 caballo */
 #caballo_2{
@@ -311,9 +311,9 @@ input[type=button]:hover{
 }
 /* Animacion para el 2 caballo (Chrome)*/
 @-webkit-keyframes ani_caballo_2{
-    0% {transform: rotate(0deg); right: -30%;}
-    50% {transform: rotate(5deg); right: 50%;}
-    100% {transform: rotate(0deg); right: 130%;}
+    0% {transform: rotate(5deg); right: -30%;}
+    50% {transform: rotate(-5deg); right: 50%;}
+    100% {transform: rotate(5deg); right: 130%;}
 }
 /* Estilo general para las piernas */
 .piernas{
