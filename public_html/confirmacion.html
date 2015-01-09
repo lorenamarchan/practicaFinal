@@ -1,17 +1,17 @@
-<!DOCTYPE html>
 
 <!--
-Autor=Paul Lozano Cruzado 
-Fecha=06-ene-2015
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=06-dic-2014
 Licencia=gpl30
 Version=1.0
-Descripcion=
+Descripcion=Pagina HTML Emergente de Confirmacion del envío del Formulario.
 -->
 
 <!--
-Copyright (C) 2015 Paul Lozano Cruzado 
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
 
 This program is free software: you can redistribute it and/or modify
+
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -31,44 +31,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <title>Confimacion</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link  rel=stylesheet href="css/css_Falabella.css">
-        <style type="text/css">            
-            body{
-                background-color: #FFFDDB;
-                text-align : center;
-            }
-            .wrapper{
-                width: calc(100% - 20px);
-                padding: 10px;
-                height: auto;
-                text-align : center;
-            }
-            h2{
-                padding-left: 0;
-            }
-            .cerrar{
-                width: 100%;
-                height: 60px;
-                position: fixed;
-                bottom: 0px;
-                background-color: #FFFDDB;
-                text-align: center;
-            }
-        </style>
-        <script type="text/javascript">
-            function cerrar() {
-                window.close();
-            }
-        </script>
+        <link  rel=stylesheet href="css/nuevas_ventanas.css">       
+        <script src="js/general.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <h2>Gracias por su colaboracion.</h2>
-            <p>Todos sus datos han sido enviado correctamente. <br>
-               Nos pondremos en contacto con usted lo antes posible.</p>
-            <div class="cerrar">
-                <input type="button" name="cerrar" id="cerrar" value="Cerrar" onclick="cerrar()">
-            </div>
-        </div>
+        <h2>Gracias por su colaboracion.</h2>
+        <p>Todos sus datos han sido enviado correctamente. <br>
+            Nos pondremos en contacto con usted lo antes posible.</p>
+        <input type="button" name="cerrar" id="cerrar" value="Cerrar" onclick="cerrar()">
     </body>
 </html>

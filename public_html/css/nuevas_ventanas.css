@@ -1,0 +1,78 @@
+/* 
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=08-ene-2015
+Licencia=gpl30
+Version=1.0
+Descripcion=hoja de estilos de las ventanas emergentes de la web
+*/
+
+/*
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: titulos;
+    src: url(../fuentes/IMFeFCsc28P.ttf) format('truetype');
+}
+/*Importacion de la fuente*/
+@font-face  {
+    font-family: general;
+    src: url(../fuentes/PT_Serif-Web-Regular.ttf) format('truetype');
+}
+body{
+    background-color: #FFFDDB;    
+    font-family: general;
+    color: #70624C;
+    font-size: 14px;
+    text-align : center;
+}
+
+h1,h2,h3{font-family: titulos;color: #433333;}
+
+h2{padding-left: 0;}
+
+.wrapper{
+    width: calc(100% - 20px);
+    padding: 10px;
+    height: auto;
+}
+
+.cerrar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #FFFDDB;
+    text-align: center;
+}
+input[type=button]{
+    background-color: #FFFDDB;
+    color: #70624C;
+    border: solid 2px #70624C;
+    border-radius: 7px;
+    min-width: 60px;
+    height: 30px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-family: 'general';
+} 
+
+input[type=button]:hover{
+    background-color: #70624C;
+    color: #FFFDDB;
+}
+    
