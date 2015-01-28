@@ -200,9 +200,9 @@ footer{
 
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la pagina de galeria */
 #galeria section h3{
-    width: 90%;
+    /* width: 90%; */
     border-bottom: solid 1px;
-    margin: 40px 0px 0px 40px;
+    margin: 40px 0px 15px 0px;
     color: #70624C;
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la pagina de galeria */
