@@ -44,7 +44,11 @@ body,root,html{
     background-color: #664F30;
 }    
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
-h2{padding: 40px 0px 0px 40px;}
+
+h2{
+    padding: 0px 0px 0px 40px;
+    font-size: 26px;
+}
 
 a:link{color: #70624C;}
 a:visited{color: #433333;}
@@ -182,12 +186,6 @@ footer{
 #formulario{
     width: 60%;
     margin: 0 0 0 60px;
-}
-/*Estilo y posicion para el titulo del formulario*/
-#titulo_form{
-    margin-top: 0;
-    padding-top: 20px;
-    font-family: titulos;
 }
 /*Posicion para la introducion del formulario*/
 #intro_form{
@@ -441,8 +439,8 @@ input[type=button]:hover{
 }
 /* Animacion para la letras (Firefox)*/
 @keyframes ani_letras{
-    0% {top:0%; :0px;}
-    100% {top:0%;font-size:23px;}   
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}  
 }
 /* Animacion para la letras (Chrome)*/
 @-webkit-keyframes ani_letras{
