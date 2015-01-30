@@ -63,7 +63,6 @@ a:hover{color: #000;}
     position: relative;
     background-color: #FFFDDB;
     border: 1px #433333 solid;
-    background-color: #FFFDDB;
     box-shadow: 0px 0px 60px #000;
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la cabezera */
@@ -77,7 +76,7 @@ header{
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, y posicion del logotipo */
 #logotipo{
-    width: 255px;
+    width: 300px;
     height: auto;
     margin-top: 10px;
     margin-left: 10px;
