@@ -24,13 +24,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*FUNCIONES PARA LA VENTANA NUEVA*/
 
 /* nombre:      nVentana
  * descrpcion:  funcion que abre las ventanas emergentes de la web.
  * parametros:  ninguno
  * devuelve:    nada
  */
-
 function nVentana() {
     var nv = window.open("licencia.html", "nventana", "height=600 width=600");
 }
@@ -57,5 +57,94 @@ function expandir(n, obj) {
     else {
         document.getElementById("art_" + n).style.height = "auto";
         obj.value = "menos info";
+    }
+}
+
+/*FUNCIONES PARA LAS VALIDACIONES*/
+
+/**
+ * Funcion que comprueba los campos del formulario
+ * y si lo estan...activa la casilla de terminos
+ */
+function compruebaCampos() {
+
+    var campo = document.getElementsByName("requeridos");
+    var compruebaCampo = true;
+
+    for (var i = 0; i < campo.length; i++) {
+
+        if (campo[i].value === '') {
+            compruebaCampo = false;
+            break;
+        }
+    }
+
+    if (compruebaCampo === true) {
+
+        document.getElementById("condiciones").disabled = false;
+    } else {
+
+        document.getElementById("condiciones").disabled = true;
+        document.getElementById("condiciones").checked = false;
+        document.getElementById("envio").disabled = true;
+    }
+}
+/**
+ * Funcion que comprueba si esta activa la casilla
+ * de terminos, si lo esta activa el boton de enviar
+ */
+function activarEnviar() {
+
+    if (document.getElementById("condiciones").checked === true) {
+
+        document.getElementById("envio").disabled = false;
+    } else {
+
+        document.getElementById("envio").disabled = true;
+    }
+}
+/**
+ * Funcion para validar el telefono mediante una expresion 
+ * regular que solo permitira numeros y que empieze por 6
+ */
+function validaTelf() {
+
+    var valorNum = document.getElementById("tlf_movil").value;
+
+    if (!(/^(6){1}[0-9]{8}$/.test(valorNum))) {
+
+        alert("Introduce un numero de movil correcto");
+        document.getElementById("tlf_movil").value = '';
+        return false;
+    }
+    return true;
+}
+/**
+ * Funcion para validar el email mediante una expresion 
+ * regular que nos asegurara que sea un email valido
+ */
+function validarEmail()
+{
+    var email = document.getElementById("email").value;
+        
+    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){    
+        alert('El email introducido es incorrecto');
+        document.getElementById("email").value = '';
+        return false;        
+    }
+    return true;
+}
+/**
+ * Funcion para comprobar todos las validaciones anteriores
+ */
+function validacion() {
+
+    if (validarEmail() === true && validaTelf() === true) {
+        
+        window.open("confirmacion.html","confirmaion","height=250 width=425");
+        return true;
+    } else {
+        alert("Vuelve a revisar los campos, por favor");
+        return false;
     }
 }
