@@ -85,7 +85,7 @@ header{
 nav{
     position: relative;
     width: 1024px;
-    height: 40px;
+    height: 44px;
     margin: 0;
     background-color: #433333;
     border-top: 0.5em solid #70624C;
@@ -117,7 +117,7 @@ ul#navegador li a:hover {
 /*Estilo para que cambie el color al pasar por encima*/
 .pag_seleccionada{
     background: #70624C;
-    border-bottom: 0.3em solid #70624C;
+    border-bottom: 3px solid #70624C;
 }
 .pag_seleccionada:hover{
     border-bottom: 0;
@@ -176,7 +176,7 @@ footer{
     height: 540px;
     top: 112px;
     padding-left: 10px;
-    margin: 0 0 0 -32px;
+    margin: 0 0 0 87px;
 }
 
 /*ESTILO PARA EL FORMULARIO*/
