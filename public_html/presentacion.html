@@ -32,10 +32,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css" type="text/css">
         <script type="text/javascript" src="js/general.js"></script>
+        <style type="text/css">
+            #busqueda{
+                position: relative;
+                float: right;
+                margin: 40px 40px 0 0px;
+                background-color: #FFFDDB;
+                width: 300px;
+                
+            }
+        </style>
     </head>
     <body>
         <div id="wrapper">
-            <header><img src="img/logotipo_fallabella.png" id="logotipo"></header>
+            <header>
+                <img src="img/logotipo_fallabella.png" id="logotipo">
+                <a name='buscar'></a>
+                <input type="text" name="busqueda" size="30" style=" width:300px" id='busqueda'>
+            </header>
             <nav>
                 <ul id="navegador">
                     <li><a href="index.html">Inicio</a></li>
