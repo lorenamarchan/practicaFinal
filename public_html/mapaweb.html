@@ -42,93 +42,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             footer a:hover{
                 color:#FFFDDB;
             }
-            #mapaweb{margin: 70px auto; position: relative; width: 800px; height: auto; overflow: hidden;}
-            #mapaweb section a{
-                width: 100%;
-                height: 100%;
-                display: block;
-                text-decoration: none;
-            }
-            #mapaweb section a:hover,#mapaweb section.menu a:hover{
-                color:#FFFDDB;
-            }
-            #mapaweb section{
-                float:left; 
-                margin: 40px 10px; 
-                width: 120px; 
+            #mapaweb{margin: 0px 40px; height: auto; overflow: hidden;}
+            #mapaweb section{float: left; margin: 10px;}
+
+            #mapaweb section h3{
+                margin: 15px 0px; 
+                width: 100%; 
+                min-width:150px;
                 background-color: #C0B184; 
                 color:#433333; 
                 padding: 5px;
-                text-align: center;
                 font-family: 'titulos';
                 font-size: 16px;
-            }
-            #mapaweb section.menu.inicio{
-                position: absolute;
-                left:225px;
-                top:-30px;
-            }
-            #mapaweb section.buscar{
-                position: absolute;
-                left:650px;
-                top:-30px;
-            }
-            #mapaweb section.menu{ 
-                background-color: #70624C; 
-                color:#FFFDDB; 
-            }
+            }            
             #mapaweb section.menu a{  
                 color:#C0B184; 
             }
-
-            .llaves{position: absolute;}
-
-            .llaves.horizontal{
-                border-top: solid 2px #664F30;
-                width: 295px;
-                height: 20px;
-                top:25px;
-                left:365px;
-            }
-            .llaves.grandes{
-                border: solid 2px #664F30;
-                border-bottom: none;
-                width: 450px;
-                height: 20px;
-
-            }
-            .llaves.grandes.uno{ left:75px; top:57px; }
-            .llaves.grandes.dos{ left:75px; top:165px; }
-
-            .llaves.dicontinuauno{
-                border-left: dashed 2px #664F30;
-                border-bottom: dashed 2px #664F30;
-                width: 250px;
-                height: 30px;
-                top:235px;
-                left: 380px;
-            }
-            .llaves.dicontinuados{
-                border-right: dashed 2px #664F30;
-                border-top: dashed 2px #664F30;
-                width: 40px;
-                height: 170px;
-                top:95px;
-                left: 590px;
-            }
-            .llaves.vertical{
-                border-left: solid 1px #664F30;
-                border-right: solid 1px #664F30;
-                width:0px;
-                height: 20px;
-            }
-
-            .llaves.vertical.uno{left:300px; height: 129px;}
-            .llaves.vertical.dos{left:225px;top:58px;}
-            .llaves.vertical.tres{left:380px;top:58px;}
-            .llaves.vertical.cuatro{left:225px;top:167px;}
-            .llaves.vertical.cinco{left:380px;top:167px;}
-
+            #mapaweb section li{margin: 5px 20px}
 
 
         </style>
@@ -152,49 +82,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <div id="migas"><a href="index.html">Inicio</a> > Mapa Web</div>
                 <h2>Mapa Web</h2> 
                 <div id="mapaweb">
-                    <br>
-                    <br>
-                    <section class="menu inicio">
-                        <a href="index.html">inicio</a>                    
-                    </section>
-                    <section class="menu">
-                        <a href="presentacion.html">presentacion</a>
-                    </section>
-                    <section class="menu">
-                        <a href="catalogo.html">actividades</a>
-                    </section>
-                    <section class="menu">
-                        <a href="galeria.html">galeria</a>
-                    </section>
-                    <section class="menu">
-                        <a href="formulario.html">contacta</a>
-                    </section>
-                    <section style="clear:left;">
-                        <a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a>
+                    <section>
+                        <h3>Inicio</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>              
+                            <li><a href="presentacion.html">Presentación</a></li>
+                            <li><a href="catalogo.html">Actividades</a></li>
+                            <ul>
+                                <li style="margin-left:40px"><a href="formulario.html">Contratar Actividad</a></li>              
+
+                            </ul>
+                            <li><a href="galeria.html">Galería</a></li>
+                            <li><a href="formulario.html">Contacta</a></li>
+                        </ul>
                     </section>
                     <section>
-                        <a href="#">Politica de Cookies (proximamente)</a>
-                    </section>
-                    <section>
-                        <a href="formulario.html">Contacta con Nosotros</a>
-                    </section>
-                    <section>
-                        <a href="mapaweb.html">Mapa Web</a>
-                    </section>
-                    <section class='buscar'>
-                        <a href="javascript:void(0)" onclick="document.getElementById('busqueda').focus();">Buscar</a>
+                        <h3>Footer</h3>
+                        <ul>
+                            <li><a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                            <li><a href="formulario.html">Contacta con Nosotros</a></li>
+                            <li><a href="mapaweb.html">Mapa Web</a></li>
+                        </ul>
                     </section>
 
-                    <div class="llaves grandes uno"></div>
-                    <div class="llaves grandes dos"></div>
-                    <div class="llaves vertical uno"></div>
-                    <div class="llaves vertical dos"></div>
-                    <div class="llaves vertical tres"></div>
-                    <div class="llaves vertical cuatro"></div>
-                    <div class="llaves vertical cinco"></div>
-                    <div class="llaves dicontinuauno"></div>
-                    <div class="llaves dicontinuados"></div>
-                    <div class="llaves horizontal"></div>
                 </div>
             </div>
             <footer>                
