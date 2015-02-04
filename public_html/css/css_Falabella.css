@@ -45,16 +45,14 @@ body,root,html{
 }    
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
-h2{
-    padding: 0px 0px 0px 40px;
-    font-size: 26px;
-}
+h2{ padding: 0px 0px 0px 40px; font-size: 26px; }
 
 a:link{color: #70624C;}
 a:visited{color: #433333;}
-a:hover{color: #000;}
+a:hover{color:#C0B184;}
+footer a:hover{color:#FFFDDB;}
 
-/*En este estilo definimos el tamaÃƒÆ’Ã‚Â±o, los margenes, y la alineacion del lienzo */
+/*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
     height: auto;
@@ -65,27 +63,27 @@ a:hover{color: #000;}
     border: 1px #433333 solid;
     box-shadow: 0px 0px 60px #000;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la cabezera */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la cabezera */
 header{
     position: relative;
     width: 1014px;
-    height: 90px;
+    height: 110px;
     background-color: #c0B184;
     padding-top: 10px;
     padding-left: 10px;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, y posicion del logotipo */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, y posicion del logotipo */
 #logotipo{
-    width: 300px;
+    width: 325px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
     width: 1024px;
-    height: 43px;
+    height: 44px;
     margin: 0;
     background-color: #433333;
     border-top: 0.5em solid #70624C;
@@ -117,12 +115,12 @@ ul#navegador li a:hover {
 /*Estilo para que cambie el color al pasar por encima*/
 .pag_seleccionada{
     background: #70624C;
-    border-bottom: 0.3em solid #70624C;
+    border-bottom: 3px solid #70624C;
 }
 .pag_seleccionada:hover{
     border-bottom: 0;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color del footer */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color del footer */
 footer{
     position: relative;
     width: 1024px;
@@ -138,13 +136,13 @@ footer{
 
 /*ESTILO PARA LAS MIGAS DE PAN*/
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de las migas de pan */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
     font-size: 12px;                
 } 
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
     min-height: 400px;
@@ -165,7 +163,7 @@ footer{
     padding: 0 0 0 0;
     font-size: 24px;
 }
-/* Estilo de la imagÃƒÆ’Ã‚Â©n en inicio */
+/* Estilo de la imagen en inicio */
 #ImagenIndex{
     float: left;
     background-size: 100%;
@@ -176,7 +174,7 @@ footer{
     height: 540px;
     top: 112px;
     padding-left: 10px;
-    margin: 0 0 0 -32px;
+    margin: 0 0 0 87px;
 }
 
 /*ESTILO PARA EL FORMULARIO*/
@@ -194,17 +192,22 @@ footer{
 #form{
     padding-bottom: 20px;
 }
+.color{
+    color :gray;
+}
 
 /*ESTILO PARA LA GALERIA*/
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+
+#galeria{margin: -30px 60px 60px 60px}                             
+#galeria section{overflow: hidden;}
 #galeria section h3{
-    /* width: 90%; */
     border-bottom: solid 1px;
     margin: 40px 0px 15px 0px;
     color: #70624C;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
@@ -253,7 +256,7 @@ input[type=button]:hover{
 
 /*ESTILO PARA LA PRESENTACION*/
 
-/* Estilo que define, la alineacio, el tipo de letra, el ancho del texto. */
+/* Estilo que define, la alineacion, el tipo de letra, el ancho del texto. */
 #texto_presentacion{
     float: left;
     font-family: general;
@@ -261,7 +264,7 @@ input[type=button]:hover{
     width: 400px;
     padding-bottom: 20px;
 }
-/* Estilo de la imagÃƒÆ’Ã‚Â©n y animaciÃƒÆ’Ã‚Â³n del caballo en presentaciÃƒÆ’Ã‚Â³n */
+/* Estilo de la imagen y animacion del caballo en presentacion */
 #CaballoDer{
     float: right;
     background-size: 100%;
@@ -327,3 +330,23 @@ article.catalogo .descripcion{
 
 /* Estilo del boton input de cada apartado del catalogo (de cada actividad))*/
 article.catalogo input{float: right;font-size: 12px;}
+
+
+/*ESTILO PARA EL MAPA WEB*/
+
+
+#mapaweb{margin: 0px 40px; height: auto; overflow: hidden;}
+#mapaweb section{float: left; margin: 0px 10px;}
+
+#mapaweb section h3{
+    margin: 0px; 
+    width: auto; 
+    min-width:150px;
+    background-color: #C0B184; 
+    color:#433333; 
+    padding: 7px;
+}            
+#mapaweb section.menu a{color:#C0B184;}
+#mapaweb section li{margin: 5px 20px}
+
+
