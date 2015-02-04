@@ -32,7 +32,7 @@
  * devuelve:    nada
  */
 function nVentana() {
-    var nv = window.open("licencia.html", "nventana", "height=600 width=600");
+    var nv = window.open("licencia.html", "nventana", "scrollbars=yes, height=600, width=600");
 }
 
 /* nombre:      cerrar
