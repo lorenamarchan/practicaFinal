@@ -32,6 +32,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
         <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript">
+
+            function sugerencias(n_campo){
+                
+                document.getElementsByName("requeridos")[n_campo].style.color = 'black';
+                document.getElementsByName("requeridos")[n_campo].value = '';                
+                                
+            }
+            function sugerencia(){
+                
+                document.getElementsById("tlf_fijo").style.color = 'black';
+                document.getElementsById("tlf_fijo").value = ''; 
+            }
+            
+        </script>
     </head>
     <body>
         <script type="text/javascript" src="js/validaciones.js"></script> 
@@ -58,28 +73,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <table>
                             <tr>
                                 <td>Nombre *:</td>
-                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" value="dasdas" required><br></td>
+                                <td><input type="text" id="nombre" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(0)" value="Ej: Jose" required><br></td>
                             </tr>
                             <tr>
                                 <td>1º Apellido *:</td>
-                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_1" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(1)" value="Ej: Garcia" required><br></td>
                             </tr>
                             <tr>
                                 <td>2º Apellido *:</td>
-                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required><br></td>
+                                <td><input type="text" id="apellidos_2" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(2)" value="Ej: Gonzaléz" required><br></td>
                             </tr>
                             <tr>
                                 <td>Email *:</td>
-                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required=""><br></td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono Fijo:</td>
-                                <td><input type="text" id="tlf_fijo"  oninput="compruebaCampos()"><br></td>
+                                <td><input type="text" id="email" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(3)" value="Ej: jose_garcia@gmail.es" required=""><br></td>
                             </tr>
                             <tr>
                                 <td>Teléfono Móvil *:</td>
-                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required><br></td>
-                            </tr>
+                                <td><input type="text" id="tlf_movil" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(4)" value="Ej: 658 965 125" required><br></td>
+                            </tr>                            
+                            <tr>
+                                <td>Teléfono Fijo:</td>
+                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" class="color" onclick="sugerencias()" value="Ej: 91 651 41 65"><br></td>
+                            </tr>                            
                             <tr><td>Asunto *</td>
                                 <td>
                                     <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required>
