@@ -69,16 +69,16 @@ a:hover{color: #000;}
 header{
     position: relative;
     width: 1014px;
-    height: 90px;
+    height: 110px;
     background-color: #c0B184;
     padding-top: 10px;
     padding-left: 10px;
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, y posicion del logotipo */
 #logotipo{
-    width: 300px;
+    width: 325px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã‚Â±o, los margenes y el color de la barra de navegacion */
