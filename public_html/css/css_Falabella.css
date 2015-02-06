@@ -83,6 +83,18 @@ header{
     margin-top: 15px;
     margin-left: 10px;
 }
+/*Estilo del boton de búsqueda*/
+#busqueda{
+    position: relative;
+    float: right;
+    margin: 54px 40px 0 0px;
+    background-color: #FFFDDB;
+    width: 170px;
+    height: 20px;
+    border: solid;
+    border-color: #433333;
+
+}
 /*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
@@ -247,16 +259,20 @@ input[type=button]{
     color: #70624C;
     border: solid 2px #70624C;
     border-radius: 7px;
-    min-width: 60px;
+    min-width: 80px;
     height: 30px;
     cursor: pointer;
-    margin: 15px 0;
+    margin: 7px 0;
     font-family: 'general';
 
 } 
 input[type=button]:hover{
     background-color: #70624C;
     color: #FFFDDB;
+}
+/*estilo para los botones de tipo input contratar*/
+.contratar{
+    clear:both;
 }
 
 /*ESTILO PARA LA PRESENTACION*/
@@ -272,11 +288,11 @@ input[type=button]:hover{
 
 /*Estilo del <iframe> de ubicacion*/
 #ubicacion{
-position: relative;
-float: right;
-margin-right: 80px;
-top: -29px;
-     
+    position: relative;
+    float: right;
+    margin-right: 80px;
+    top: -29px;
+
 }
 
 /*ESTILO PARA EL CATALOGO*/
