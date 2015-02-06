@@ -54,10 +54,10 @@ a:visited{color: #433333;}
 a:hover{color:#C0B184;}
 footer a:hover{color:#FFFDDB;}
 
-/*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
+/*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
-    min-height: 100%;
+    min-height: calc(100% - 2px);
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -65,9 +65,20 @@ footer a:hover{color:#FFFDDB;}
     background-color: #FFFDDB;
     border: 1px #433333 solid;
     box-shadow: 0px 0px 60px #000;
-
+    overflow: hidden;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la cabezera */
+
+#wrapperBanner{
+    width:250px;
+    background-color: #348DC7;
+    height: calc(100% - 100px);
+    overflow: hidden;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    border-left: solid 1px #433333;
+}
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la cabezera */
 header{
     position: relative;
     width: 1014px;
@@ -75,27 +86,16 @@ header{
     background-color: #c0B184;
     padding-top: 10px;
     padding-left: 10px;
+    z-index: 99;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, y posicion del logotipo */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, y posicion del logotipo */
 #logotipo{
     width: 325px;
     height: auto;
     margin-top: 15px;
     margin-left: 10px;
 }
-/*Estilo del boton de búsqueda*/
-#busqueda{
-    position: relative;
-    float: right;
-    margin: 54px 40px 0 0px;
-    background-color: #FFFDDB;
-    width: 170px;
-    height: 20px;
-    border: solid;
-    border-color: #433333;
-
-}
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
     width: 1024px;
@@ -104,6 +104,7 @@ nav{
     background-color: #433333;
     border-top: 0.5em solid #70624C;
     border-bottom: 0.5em solid #70624C;
+    z-index: 99;
 } 
 /*Estilo del ul*/
 ul{
@@ -136,7 +137,7 @@ ul#navegador li a:hover {
 .pag_seleccionada:hover{
     border-bottom: 0;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color del footer */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color del footer */
 footer{
     position: absolute;
     bottom: 0px;
@@ -149,50 +150,47 @@ footer{
     overflow: hidden;    
     text-align: center;
     padding: 10px 0px;
+    z-index: 99;
 }
 
 /*ESTILO PARA LAS MIGAS DE PAN*/
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de las migas de pan */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
     font-size: 12px;                
 } 
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
-    min-height: 400px;
-    height: auto;
+    min-height: 550px;
+    height: 100%;
+    margin-bottom: 80px;
 }
 
 /*ESTILO PARA EL INDEX*/
 
 /*Posicion para el titulo del index*/
-#titulo_inicio{
-    margin: -70px 0 10px -60px;
-    padding: 0 0 0 0;
-    font-size: 38px;
+#titulo_inicio{    
+    margin: 60px 0 0 40px;
+    padding: 0;
+    font-size: 42px;
 }
 /*Posicion para el subtitulo del index*/
 #subtitulo_inicio{
-    margin: 0px 0 0 -60px;
-    padding: 0 0 0 0;
-    font-size: 24px;
+    margin-left: 60px;
+    padding: 0;
+    font-size: 28px;
 }
 /* Estilo de la imagen en inicio */
-#ImagenIndex{
-    float: left;
-    background-size: 100%;
-    position: relative;
+.index{
+    background-size: auto 70%;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-image: url('../img/Entrada.png');
-    width: 670px;
-    height: 540px;
-    top: 112px;
-    padding-left: 10px;
-    margin: 0 0 0 87px;
 }
+
 
 /*ESTILO PARA EL FORMULARIO*/
 
@@ -215,7 +213,7 @@ footer{
 
 /*ESTILO PARA LA GALERIA*/
 
-/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaÃ±o, los margenes y el color de la pagina de galeria */
 
 #galeria{margin: -30px 60px 60px 60px}                             
 #galeria section{overflow: hidden;}
@@ -224,7 +222,7 @@ footer{
     margin: 40px 0px 15px 0px;
     color: #70624C;
 }
-/*Estilo donde definimos el tamaño, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamaÃ±o, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
@@ -254,25 +252,21 @@ footer{
     height: auto;
 }
 /*estilo para los botones de tipo input*/
-input[type=button]{
+input[type=button],input[type=submit]{
     background-color: #FFFDDB;
     color: #70624C;
     border: solid 2px #70624C;
     border-radius: 7px;
-    min-width: 80px;
+    min-width: 60px;
     height: 30px;
     cursor: pointer;
-    margin: 7px 0;
+    margin: 15px 0;
     font-family: 'general';
 
 } 
-input[type=button]:hover{
+input[type=button]:hover,input[type=submit]:hover{
     background-color: #70624C;
     color: #FFFDDB;
-}
-/*estilo para los botones de tipo input contratar*/
-.contratar{
-    clear:both;
 }
 
 /*ESTILO PARA LA PRESENTACION*/
@@ -284,15 +278,29 @@ input[type=button]:hover{
     margin-left: 60px;
     width: 400px;
     padding-bottom: 20px;
+    padding-right: 50px;
 }
-
-/*Estilo del <iframe> de ubicacion*/
-#ubicacion{
-    position: relative;
+/* Estilo de la imagen y animacion del caballo en presentacion */
+#CaballoDer{
     float: right;
-    margin-right: 80px;
-    top: -29px;
-
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    width: 300px;
+    height: 350px;
+    background-image: url('../img/caballos.png');
+    -webkit-animation: AnimacionCaballoDer 4s;
+    animation: AnimacionCaballoDer 4s; /*para FireFox*/
+    transform: scaleX(-1);
+}
+@-webkit-keyframes AnimacionCaballoDer {
+    0%   {opacity: 0.1}
+    100% {opacity: 1 }
+}
+@keyframes AnimacionCaballoDer {  /*para FireFox*/
+    0% {opacity: 0.1}
+    100%{opacity: 1 }
 }
 
 /*ESTILO PARA EL CATALOGO*/
