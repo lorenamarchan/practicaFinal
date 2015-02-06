@@ -264,27 +264,14 @@ input[type=button]:hover{
     width: 400px;
     padding-bottom: 20px;
 }
-/* Estilo de la imagen y animacion del caballo en presentacion */
-#CaballoDer{
-    float: right;
-    background-size: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    margin-right: 150px;
-    width: 300px;
-    height: 350px;
-    background-image: url('../img/caballos.png');
-    -webkit-animation: AnimacionCaballoDer 4s;
-    animation: AnimacionCaballoDer 4s; /*para FireFox*/
-    transform: scaleX(-1);
-}
-@-webkit-keyframes AnimacionCaballoDer {
-    0%   {opacity: 0.1}
-    100% {opacity: 1 }
-}
-@keyframes AnimacionCaballoDer {  /*para FireFox*/
-    0% {opacity: 0.1}
-    100%{opacity: 1 }
+
+/*Estilo del <iframe> de ubicacion*/
+#ubicacion{
+position: relative;
+float: right;
+margin-right: 80px;
+top: -29px;
+     
 }
 
 /*ESTILO PARA EL CATALOGO*/
