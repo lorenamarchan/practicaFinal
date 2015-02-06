@@ -42,7 +42,9 @@ body,root,html{
     background: url(../img/fondo.jpg) fixed;
     background-size: auto 100%;
     background-color: #664F30;
-}    
+    height:100%;
+} 
+
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
 h2{ padding: 0px 0px 0px 40px; font-size: 26px; }
@@ -55,6 +57,7 @@ footer a:hover{color:#FFFDDB;}
 /*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1024px;
+    min-height: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +65,7 @@ footer a:hover{color:#FFFDDB;}
     background-color: #FFFDDB;
     border: 1px #433333 solid;
     box-shadow: 0px 0px 60px #000;
+
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color de la cabezera */
 header{
@@ -122,7 +126,8 @@ ul#navegador li a:hover {
 }
 /*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o, los margenes y el color del footer */
 footer{
-    position: relative;
+    position: absolute;
+    bottom: 0px;
     width: 1024px;
     background-color: #c0B184;
     font-size: 13px;
