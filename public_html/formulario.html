@@ -32,25 +32,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
         <script type="text/javascript" src="js/general.js"></script>
-        <script type="text/javascript">
-            function sugerencias(n_campo){
-                
-                document.getElementsByName("requeridos")[n_campo].style.color = 'black';
-                document.getElementsByName("requeridos")[n_campo].value = '';                
-                                
-            }
-            function sugerencia(){
-                
-                document.getElementsById("tlf_fijo").style.color = 'black';
-                document.getElementsById("tlf_fijo").value = ''; 
-            }            
-        </script>
     </head>
     <body>
-        <script type="text/javascript" src="js/validaciones.js"></script> 
         <div id="wrapper">
             <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo"></a>
+                <a name='buscar'></a>
+                <input type="text" name="busqueda" size="10"  id='busqueda'>
             </header>
             <nav>
                 <ul id="navegador">
@@ -71,32 +59,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <table>
                             <tr>
                                 <td>Nombre *:</td>
-                                <td><input type="text" id="nombre" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(0)" value="Ej: Jose" required><br></td>
+                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: Jose</td>
                             </tr>
                             <tr>
                                 <td>1º Apellido *:</td>
-                                <td><input type="text" id="apellidos_1" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(1)" value="Ej: Garcia" required><br></td>
+                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: Garcia</td>
                             </tr>
                             <tr>
                                 <td>2º Apellido *:</td>
-                                <td><input type="text" id="apellidos_2" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(2)" value="Ej: Gonzaléz" required><br></td>
+                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: Alonso</td>
                             </tr>
                             <tr>
                                 <td>Email *:</td>
-                                <td><input type="text" id="email" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(3)" value="Ej: jose_garcia@gmail.es" required=""><br></td>
+                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: jose_garcia@gmail.es</td>
                             </tr>
                             <tr>
                                 <td>Teléfono Móvil *:</td>
-                                <td><input type="text" id="tlf_movil" name="requeridos" class="color" oninput="compruebaCampos()" onclick="sugerencias(4)" value="Ej: 658 965 125" required><br></td>
+                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: 660 855 966</td>
                             </tr>                            
                             <tr>
                                 <td>Teléfono Fijo:</td>
-                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" class="color" onclick="sugerencias()" value="Ej: 91 651 41 65"><br></td>
+                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" required size="33"><br></td>
+                                <td class="color" >Ej: 91 255 89 56</td>
                             </tr>                            
                             <tr><td>Asunto *</td>
                                 <td>
-                                    <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required>
-                                        <option value='' selected>--Seleccione Asunto--</option>
+                                    <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required style="width: 265px">
+                                        <option value='' selected class="color">--Seleccione Asunto--</option>
                                         <option value='Tarifas'>Tarifas</option>
                                         <option value='Federarse'>Federarse</option>
                                         <option value='Pupilaje'>Pupilaje</option>
@@ -118,6 +112,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <td><input type='submit' id="envio" value="Enviar datos" disabled></td>
                             </tr>
                         </table>
+           
                     </form>
                 </div>    
             </div>

@@ -30,10 +30,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #banner{
     width: 250px;
     height: 550px;
-    float: right;
-    position: relative;
+    position: absolute;
+    bottom: 80px;
     overflow: hidden;
-    border: 1px #433333 solid;
 }
 /* Estilo y animacion para el cielo */
 #cielo{
