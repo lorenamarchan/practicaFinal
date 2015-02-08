@@ -35,13 +35,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <script type="text/javascript"  src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript"  src="js/lightbox.js"></script>
         <script type="text/javascript" src="js/general.js"></script>
+        <link rel="icon" href="img/falabella.ico" />
     </head>
     <body>
         <div id="wrapper">
-            <header> 
+            <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo"></a>
-                <a name='buscar'></a>
-                <input type="text" name="busqueda" size="10"  id='busqueda'>
+                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
             </header>
             <nav>
                 <ul id="navegador">
@@ -94,9 +94,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 </div>
             </div>
             <footer>                
-                Hipica FalaBella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="javascript:void(0)">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a>  | <a href="mapaweb.html">Mapa Web</a></span>
+                Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a> | <a href="javascript:void(0)">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
-        </div>       
+        </div> 
+        <script type="text/javascript">document.getElementById("busqueda").onkeypress = buscar;</script>
     </body>
 </html>
