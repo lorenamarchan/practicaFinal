@@ -444,12 +444,12 @@ article.catalogo input{float: right;font-size: 12px;}
     width: auto;
     height: auto;
     overflow: hidden;
-    background-image: url(img/flecha.png);
+    background-image: url(../img/flecha.png);
     background-repeat: no-repeat;
     background-position: right 6px;
     padding-right: 17px;
     display:inline-block;
 }
 .flecha:hover{
-    background-image: url(img/flecha_hover.png);
+    background-image: url(../img/flecha_hover.png);
 }
