@@ -200,7 +200,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #animacion_logo{
     width: 200px;
     height: 40px;
-    margin: -500px 0 0 25px;
+    margin: -450px 0 0 25px;
     background-image: url('../img/FALABELLA.png');
     background-size: 100% 100%;
     position: absolute;
