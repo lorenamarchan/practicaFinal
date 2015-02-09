@@ -57,7 +57,7 @@ function expandir(n, obj) {
     var num = parseInt(el);
     if (num > 80) {
         console.log("entra en el if");
-        document.getElementById("art_" + n).style.height = "80px";
+        document.getElementById("art_" + n).style.height = "90px";
         obj.value = "mas info";
     }
     else {

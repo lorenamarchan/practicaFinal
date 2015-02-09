@@ -54,7 +54,7 @@ a:visited{color: #433333;}
 a:hover{color:#C0B184;}
 footer a:hover{color:#FFFDDB;}
 
-/*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
+/*En este estilo definimos el tamano, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 1022px;
     min-height: calc(100% - 2px);
@@ -78,7 +78,7 @@ footer a:hover{color:#FFFDDB;}
     right: 0px;
     border-left: solid 1px #433333;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la cabezera */
+/*Estilo donde definimos el tamano, los margenes y el color de la cabezera */
 header{
     position: relative;
     width: 1014px;
@@ -88,14 +88,14 @@ header{
     padding-left: 10px;
     z-index: 99;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, y posicion del logotipo */
+/*Estilo donde definimos el tamano, y posicion del logotipo */
 #logotipo{
     width: 325px;
     height: auto;
     margin-top: 15px;
     margin-left: 10px;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
     width: 1024px;
@@ -137,7 +137,7 @@ ul#navegador li a:hover {
 .pag_seleccionada:hover{
     border-bottom: 0;
 }
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color del footer */
+/*Estilo donde definimos el tamano, los margenes y el color del footer */
 footer{
     position: absolute;
     bottom: 0px;
@@ -155,13 +155,13 @@ footer{
 
 /*ESTILO PARA LAS MIGAS DE PAN*/
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de las migas de pan */
+/*Estilo donde definimos el tamano, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
     font-size: 12px;                
 } 
 
-/*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
+/*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
     min-height: 350px;
@@ -225,7 +225,7 @@ footer{
 
 /*ESTILO PARA LA GALERIA*/
 
-/*Estilo donde definimos el tamaÃ±o, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamano, los margenes y el color de la pagina de galeria */
 
 #galeria{margin: -30px 60px 60px 60px}                             
 #galeria section{overflow: hidden;}
@@ -234,7 +234,7 @@ footer{
     margin: 40px 0px 15px 0px;
     color: #70624C;
 }
-/*Estilo donde definimos el tamaÃ±o, los margenes y el color de la pagina de galeria */
+/*Estilo donde definimos el tamano, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
@@ -384,6 +384,11 @@ article.catalogo .descripcion{
 /* Estilo del boton input de cada apartado del catalogo (de cada actividad))*/
 article.catalogo input{float: right;font-size: 12px;}
 
+/*estilo para los botones de tipo input contratar*/
+.contratar{
+    clear:both;
+    margin: 0 0 0 0;
+}
 
 /*ESTILO PARA EL MAPA WEB*/
 
