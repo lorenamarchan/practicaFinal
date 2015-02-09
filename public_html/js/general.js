@@ -31,6 +31,8 @@
  * parametros:  ninguno
  * devuelve:    nada
  */
+
+
 function nVentana() {
     var nv = window.open("licencia.html", "nventana", "scrollbars=yes, height=600, width=600");
 }
@@ -50,14 +52,21 @@ function cerrar() {
  * devuelve:    nada
  */
 function expandir(n, obj) {
-    if (document.getElementById("art_" + n).style.height > "70px") {
-        document.getElementById("art_" + n).style.height = "70px";
+    var el = (document.getElementById("art_" + n).style.height).slice(0, -2);
+    var tamano = document.getElementById("texto_" + n).offsetHeight + "px";
+    var num = parseInt(el);
+    if (num > 80) {
+        console.log("entra en el if");
+        document.getElementById("art_" + n).style.height = "80px";
         obj.value = "mas info";
     }
     else {
-        document.getElementById("art_" + n).style.height = "auto";
+        console.log("entra en el else");
+        document.getElementById("art_" + n).style.height = tamano;
         obj.value = "menos info";
+
     }
+
 }
 
 /*FUNCIONES PARA LAS VALIDACIONES*/
@@ -126,11 +135,11 @@ function validaTelf() {
 function validarEmail()
 {
     var email = document.getElementById("email").value;
-        
-    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){    
+
+    if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))) {
         alert('El email introducido es incorrecto');
         document.getElementById("email").value = '';
-        return false;        
+        return false;
     }
     return true;
 }
@@ -138,13 +147,78 @@ function validarEmail()
  * Funcion para comprobar todos las validaciones anteriores
  */
 function validacion() {
-
     if (validarEmail() === true && validaTelf() === true) {
-        
-        window.open("confirmacion.html","confirmaion","height=250 width=425");
+
+        window.open("confirmacion.html", "confirmaion", "height=250 width=425");
         return true;
     } else {
         alert("Vuelve a revisar los campos, por favor");
+        compruebaCampos();
         return false;
+    }
+}
+
+var busqueda = "";
+
+function focusBuscar(elem) {
+    elem.value = "";
+    elem.style.color = "#433333";
+    elem.style.fontStyle = "normal";
+}
+function blurBuscar(elem) {
+    elem.value = "Buscar...";
+    elem.style.color = "#70624C";
+    elem.style.fontStyle = "italic";
+}
+
+
+function buscar(e) {
+    busqueda = document.getElementById('busqueda').value;
+    var evento = window.event || e;
+    if (evento.keyCode == 13) {
+        document.cookie = "busqueda=" + busqueda;
+        window.location.assign("busqueda.html");
+    }
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ')
+            c = c.substring(1);
+        if (c.indexOf(name) == 0)
+            return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function resultado() {
+    var resultado = document.getElementsByClassName('resultado');
+    for (var i = 0; i < resultado.length; i++) {
+        resultado[i].innerHTML = getCookie('busqueda');
+    }
+    document.getElementById('aGoogle').href = "https://www.google.es/?gws_rd=ssl#q=inurl:falabella+" + getCookie('busqueda');
+}
+
+
+function visualizar(numero) {
+    var elem1 = document.getElementById("usod_" + numero);
+    var elem2 = document.getElementById("usot_" + numero);
+    var demas = document.getElementsByClassName('usod');
+    for (var i = 0; i < demas.length; i++) {
+        if (demas[i].id !== "usod_" + numero) {
+            demas[i].style.display = "none";
+            elem2.style.backgroundPosition = "right 6px";
+        }
+    }
+    if (elem1.style.display === "block") {
+        elem1.style.display = "none";
+        elem2.style.backgroundPosition = "right 6px";
+    }
+    else {
+        elem1.style.display = "block";
+        elem2.style.backgroundPosition = "right -10px";
     }
 }

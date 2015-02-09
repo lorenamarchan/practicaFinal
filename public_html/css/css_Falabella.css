@@ -56,7 +56,7 @@ footer a:hover{color:#FFFDDB;}
 
 /*En este estilo definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes, y la alineacion del lienzo */
 #wrapper{
-    width: 1024px;
+    width: 1022px;
     min-height: calc(100% - 2px);
     height: auto;
     margin-left: auto;
@@ -164,9 +164,9 @@ footer{
 /*Estilo donde definimos el tamaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o, los margenes y el color de la barra de navegacion */
 #main{
     width: 1024px;
-    min-height: 550px;
+    min-height: 350px;
     height: 100%;
-    margin-bottom: 80px;
+    padding-bottom: 100px; 
 }
 
 /*ESTILO PARA EL INDEX*/
@@ -208,7 +208,19 @@ footer{
     padding-bottom: 20px;
 }
 .color{
-    color :gray;
+    color:#C0B184;
+    font-size: 12px;
+    font-style: italic;
+    cursor: default;
+}
+.color::selection{
+    color:#C0B184;
+    background-color:rgba(0,0,0,0); 
+}
+
+.color::-moz-selection { /* Code for Firefox */
+    color:#C0B184;
+    background-color:rgba(0,0,0,0); 
 }
 
 /*ESTILO PARA LA GALERIA*/
@@ -264,9 +276,32 @@ input[type=button],input[type=submit]{
     font-family: 'general';
 
 } 
+#formulario input[type=text]{
+    width:100%;
+}
+#formulario tr:first-child{
+    width:200px;
+}
+
+input[type=button]:disabled,input[type=submit]:disabled,input[type=button]:disabled:hover,input[type=submit]:disabled:hover{
+    color: #C0B184;
+    border-color: #C0B184;
+    background-color: #FFFDDB;
+    cursor: auto;
+}
+
 input[type=button]:hover,input[type=submit]:hover{
     background-color: #70624C;
     color: #FFFDDB;
+}
+
+input[type=text],select, textarea{
+    border: solid 1px #C0B184;
+    padding: 3px 0px;
+    border-radius: 2px;
+}
+textarea{
+    resize: vertical;
 }
 
 /*ESTILO PARA LA PRESENTACION*/
@@ -339,9 +374,11 @@ article.catalogo th.ext, article.catalogo td.ext{ border: none; }
 /* Estilo del texto de cada apartado del catalogo (de cada actividad))*/
 article.catalogo .descripcion{
     width: 100%;
-    height: 70px;
+    height: 80px;
     border-bottom: solid 1px #c0B184;
     overflow: hidden;
+    transition: height 2s;
+    -webkit-transition: height 2s;
 }
 
 /* Estilo del boton input de cada apartado del catalogo (de cada actividad))*/
@@ -366,3 +403,53 @@ article.catalogo input{float: right;font-size: 12px;}
 #mapaweb section li{margin: 5px 20px}
 
 
+#busqueda{
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 180px; 
+    border:solid 0px;
+    /*    border: 1px solid #70624C; */
+    height: 22px; 
+    border-radius: 5px;
+    padding:2px 15px 2px 7px;
+    background: url("../img/lupa2.png") no-repeat scroll 175px 4px / auto 70% #FFFDDB;
+    color: #70624C;
+    font-style: italic;
+}
+
+/*ESTILO PARA LA SECCION AYUDA*/
+
+.usod{
+    display:none;
+}
+#main.ayuda{
+    margin:0px 60px;
+    width: 900px;
+}
+
+.ayuda section .flecha a{
+    margin-top: 15px; 
+}
+
+.ayuda section{
+    margin: 10px;
+    width: 70%;
+    text-align:justify;
+}
+.ayuda section p{
+    margin: 2px 2px 30px 2px;
+}
+.flecha{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-image: url(../img/flecha.png);
+    background-repeat: no-repeat;
+    background-position: right 6px;
+    padding-right: 17px;
+    display:inline-block;
+}
+.flecha:hover{
+    background-image: url(../img/flecha_hover.png);
+}
