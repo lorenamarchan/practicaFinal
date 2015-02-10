@@ -269,10 +269,10 @@ input[type=button],input[type=submit]{
     color: #70624C;
     border: solid 2px #70624C;
     border-radius: 7px;
-    min-width: 60px;
+    min-width: 80px;
     height: 30px;
     cursor: pointer;
-    margin: 15px 0;
+    margin-top: 9px;
     font-family: 'general';
 
 } 
