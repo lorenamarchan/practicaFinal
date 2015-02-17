@@ -426,6 +426,7 @@ article.catalogo input{float: right;font-size: 12px;}
 /*ESTILO PARA LA SECCION AYUDA*/
 
 .usod{
+    margin: 2px 2px 40px 2px;
     display:none;
 }
 #main.ayuda{
@@ -439,12 +440,9 @@ article.catalogo input{float: right;font-size: 12px;}
 
 .ayuda section{
     margin: 10px;
-    width: 70%;
     text-align:justify;
 }
-.ayuda section p{
-    margin: 2px 2px 30px 2px;
-}
+
 .flecha{
     width: auto;
     height: auto;
@@ -455,6 +453,7 @@ article.catalogo input{float: right;font-size: 12px;}
     padding-right: 17px;
     display:inline-block;
 }
+
 .flecha:hover{
     background-image: url(../img/flecha_hover.png);
 }
