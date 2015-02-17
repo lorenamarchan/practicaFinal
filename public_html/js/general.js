@@ -33,8 +33,8 @@
  */
 
 
-function nVentana() {
-    var nv = window.open("licencia.html", "nventana", "scrollbars=yes, height=600, width=600");
+function nVentana(link) {
+    var nv = window.open(link, "nventana", "scrollbars=yes, height=600, width=600");
 }
 
 /* nombre:      cerrar
@@ -44,6 +44,13 @@ function nVentana() {
  */
 function cerrar() {
     window.close();
+}
+
+function cerrarAviso() {
+    document.getElementById('avisoCookies').style.height = "0px";
+    document.getElementById('aceptarCookies').style.height = "0px";
+    document.getElementById('aceptarCookies').style.paddingTop = "0px";
+    document.getElementById('aceptarCookies').style.paddingBottom = "0px";
 }
 
 /* nombre:      expandir
@@ -56,12 +63,10 @@ function expandir(n, obj) {
     var tamano = document.getElementById("texto_" + n).offsetHeight + "px";
     var num = parseInt(el);
     if (num > 80) {
-        console.log("entra en el if");
         document.getElementById("art_" + n).style.height = "80px";
         obj.value = "mas info";
     }
     else {
-        console.log("entra en el else");
         document.getElementById("art_" + n).style.height = tamano;
         obj.value = "menos info";
 
@@ -199,7 +204,7 @@ function resultado() {
     for (var i = 0; i < resultado.length; i++) {
         resultado[i].innerHTML = getCookie('busqueda');
     }
-    document.getElementById('aGoogle').href = "https://www.google.es/?gws_rd=ssl#q=inurl:falabella+" + getCookie('busqueda');
+    document.getElementById('aGoogle').href = "https://www.google.es/?gws_rd=ssl#q=inurl:caballitos.hol.es+" + getCookie('busqueda');
 }
 
 
@@ -222,3 +227,11 @@ function visualizar(numero) {
         elem2.style.backgroundPosition = "right -10px";
     }
 }
+
+function setCookie(c_name, value, exdays) {
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+    document.cookie = c_name + "=" + c_value;
+}
+
