@@ -31,6 +31,7 @@
  * parametros:  ninguno
  * devuelve:    nada
  */
+window.onload = function(){cookies();document.getElementById("busqueda").onkeypress = buscar;};
 
 
 function nVentana(link) {
@@ -45,12 +46,28 @@ function nVentana(link) {
 function cerrar() {
     window.close();
 }
-
-function cerrarAviso() {
+function cookies() {
+    if (!getCookie("cookieHabilitado")) {
+        var body = document.getElementsByTagName('body')[0];
+        var avisoCookies = '<div id="avisoCookies"> <div id="texto">';
+        avisoCookies += 'Usamos cookies propias y de terceros para mostrar publicidad personalizada seg&uacute;n su navegaci&oacute;n. Si continua navegando consideramos que acepta el uso de cookies.';
+        avisoCookies += '<a id="aceptarCookies" onclick="aceptarCookie();"> OK </a>';
+        avisoCookies += '<a id="masInfo" href="javascript:void(0)" onclick="nVentana(\'politicacookies.html\')">M&aacute;s informaci&oacute;n</a></div>';
+        body.insertAdjacentHTML('afterbegin', avisoCookies);
+        document.getElementById('avisoCookies').style.height = "40px";
+    }
+    else {
+        if (getCookie("nombre") != "" && getCookie("apellidos_1") != "" && getCookie("apellidos_2") != "") {
+            console.log(getCookie("nombre"));
+            var header = document.getElementsByTagName('header')[0];
+            var usuario=getCookie("nombre") + " " + getCookie("apellidos_1") + " " + getCookie("apellidos_2");
+            header.innerHTML += '<p id="bienvenida">bienvenido ' +usuario+".</p>";
+        }
+    }
+}
+function aceptarCookie() {
     document.getElementById('avisoCookies').style.height = "0px";
-    document.getElementById('aceptarCookies').style.height = "0px";
-    document.getElementById('aceptarCookies').style.paddingTop = "0px";
-    document.getElementById('aceptarCookies').style.paddingBottom = "0px";
+    setCookie("cookieHabilitado", true, 365);
 }
 
 /* nombre:      expandir
@@ -97,7 +114,6 @@ function compruebaCampos() {
 
         document.getElementById("condiciones").disabled = false;
     } else {
-
         document.getElementById("condiciones").disabled = true;
         document.getElementById("condiciones").checked = false;
         document.getElementById("envio").disabled = true;
@@ -153,8 +169,8 @@ function validarEmail()
  */
 function validacion() {
     if (validarEmail() === true && validaTelf() === true) {
-
-        window.open("confirmacion.html", "confirmaion", "height=250 width=425");
+        cookiesDatos();
+        window.open("confirmacion.html", "confirmacion", "height=250 width=425");
         return true;
     } else {
         alert("Vuelve a revisar los campos, por favor");
@@ -163,6 +179,20 @@ function validacion() {
     }
 }
 
+
+function cookiesDatos() {
+    if (getCookie("cookieHabilitado")) {
+        var nombre = document.getElementById('nombre').value;
+        var apellidos_1 = document.getElementById('apellidos_1').value;
+        var apellidos_2 = document.getElementById('apellidos_2').value;
+        var email = document.getElementById('email').value;
+        setCookie("nombre", nombre, 365);
+        setCookie("apellidos_1", apellidos_1, 365);
+        setCookie("apellidos_2", apellidos_2, 365);
+        setCookie("email", email, 365);
+    }
+
+}
 var busqueda = "";
 
 function focusBuscar(elem) {
@@ -235,3 +265,17 @@ function setCookie(c_name, value, exdays) {
     document.cookie = c_name + "=" + c_value;
 }
 
+function cookiesFormulario() {
+    if (getCookie("nombre") != "") {
+        document.getElementById('nombre').value = getCookie("nombre");
+    }
+    if (getCookie("apellidos_1") != "") {
+        document.getElementById('apellidos_1').value = getCookie("apellidos_1");
+    }
+    if (getCookie("apellidos_2") != "") {
+        document.getElementById('apellidos_2').value = getCookie("apellidos_2");
+    }
+    if (getCookie("email") != "") {
+        document.getElementById('email').value = getCookie("email");
+    }
+}
