@@ -38,7 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #cielo{
     width: 800px;
     height: 400px;
-    margin: 0 auto;
     position: absolute;
     background-image: url(../img/animacion/cielo.png);
     background-size: 100% 100%;
