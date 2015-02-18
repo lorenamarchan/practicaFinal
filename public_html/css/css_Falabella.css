@@ -38,7 +38,7 @@ body,root,html{
     padding: 0;
     font-family: general;
     color: #70624C;
-    font-size: 14px;
+    font-size: 1em;
     background: url(../img/fondo.jpg) fixed;
     background-size: auto 100%;
     background-color: #664F30;
@@ -47,7 +47,7 @@ body,root,html{
 
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
-h2{ padding: 0px 0px 0px 40px; font-size: 26px; }
+h2{ padding: 0px 0px 0px 40px; font-size: 1.857em; }
 
 a:link{color: #70624C;}
 a:visited{color: #433333;}
@@ -56,7 +56,7 @@ footer a:hover{color:#FFFDDB;}
 
 /*En este estilo definimos el tamano, los margenes, y la alineacion del lienzo */
 #wrapper{
-    width: 1022px;
+    width: 73em;
     min-height: calc(100% - 2px);
     height: auto;
     margin-left: auto;
@@ -69,7 +69,7 @@ footer a:hover{color:#FFFDDB;}
 }
 
 #wrapperBanner{
-    width:250px;
+    width:17.85em;
     background-color: #348DC7;
     height: calc(100% - 100px);
     overflow: hidden;
@@ -81,7 +81,7 @@ footer a:hover{color:#FFFDDB;}
 /*Estilo donde definimos el tamano, los margenes y el color de la cabezera */
 header{
     position: relative;
-    width: 1014px;
+    width: 72.428em;
     height: 110px;
     background-color: #c0B184;
     padding-top: 10px;
@@ -90,7 +90,7 @@ header{
 }
 /*Estilo donde definimos el tamano, y posicion del logotipo */
 #logotipo{
-    width: 325px;
+    width: 23.214em;
     height: auto;
     margin-top: 15px;
     margin-left: 10px;
@@ -98,7 +98,7 @@ header{
 /*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
 nav{
     position: relative;
-    width: 1024px;
+    width: 73.142em;
     height: 44px;
     margin: 0;
     background-color: #433333;
@@ -122,7 +122,7 @@ ul#navegador li a {
     display:block;
     text-decoration:none;
     color: #FFFDDB;
-    font-size: 21px;
+    font-size: 1.5em;
     font-family: titulos;
 }
 /*Estilo para que cambie el color al pasar por encima*/
@@ -141,9 +141,9 @@ ul#navegador li a:hover {
 footer{
     position: absolute;
     bottom: 0px;
-    width: 1024px;
+    width: 100%;
     background-color: #c0B184;
-    font-size: 13px;
+    font-size: 0.928em;
     line-height: 20px;
     color: #70624C;
     height:auto;
@@ -163,7 +163,7 @@ footer{
 
 /*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
 #main{
-    width: 1024px;
+    width: 73.142em;;
     min-height: 350px;
     height: 100%;
     padding-bottom: 100px; 
@@ -175,13 +175,13 @@ footer{
 #titulo_inicio{    
     margin: 60px 0 0 40px;
     padding: 0;
-    font-size: 42px;
+    font-size: 2.6em;
 }
 /*Posicion para el subtitulo del index*/
 #subtitulo_inicio{
     margin-left: 60px;
     padding: 0;
-    font-size: 28px;
+    font-size: 2em;
 }
 /* Estilo de la imagen en inicio */
 .index{

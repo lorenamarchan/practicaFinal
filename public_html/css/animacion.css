@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Estilo para el banner */
 #banner{
-    width: 250px;
+    width: 17.857em;
     height: 550px;
     position: absolute;
     bottom: 80px;
