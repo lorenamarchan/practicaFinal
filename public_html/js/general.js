@@ -31,7 +31,10 @@
  * parametros:  ninguno
  * devuelve:    nada
  */
-window.onload = function(){cookies();document.getElementById("busqueda").onkeypress = buscar;};
+window.onload = function() {
+    cookies();
+    document.getElementById("busqueda").onkeypress = buscar;
+};
 
 
 function nVentana(link) {
@@ -48,6 +51,7 @@ function cerrar() {
 }
 function cookies() {
     if (!getCookie("cookieHabilitado")) {
+        console.log('entra1');
         var body = document.getElementsByTagName('body')[0];
         var avisoCookies = '<div id="avisoCookies"> <div id="texto">';
         avisoCookies += 'Usamos cookies propias y de terceros para mostrar publicidad personalizada seg&uacute;n su navegaci&oacute;n. Si continua navegando consideramos que acepta el uso de cookies.';
@@ -58,10 +62,9 @@ function cookies() {
     }
     else {
         if (getCookie("nombre") != "" && getCookie("apellidos_1") != "" && getCookie("apellidos_2") != "") {
-            console.log(getCookie("nombre"));
             var header = document.getElementsByTagName('header')[0];
-            var usuario=getCookie("nombre") + " " + getCookie("apellidos_1") + " " + getCookie("apellidos_2");
-            header.innerHTML += '<p id="bienvenida">bienvenido ' +usuario+".</p>";
+            var usuario = getCookie("nombre") + " " + getCookie("apellidos_1") + " " + getCookie("apellidos_2");
+            header.innerHTML += '<p id="bienvenida">bienvenido ' + usuario + ".</p>";
         }
     }
 }
@@ -182,6 +185,7 @@ function validacion() {
 
 function cookiesDatos() {
     if (getCookie("cookieHabilitado")) {
+        console.log('entra2');
         var nombre = document.getElementById('nombre').value;
         var apellidos_1 = document.getElementById('apellidos_1').value;
         var apellidos_2 = document.getElementById('apellidos_2').value;
@@ -210,9 +214,21 @@ function blurBuscar(elem) {
 function buscar(e) {
     busqueda = document.getElementById('busqueda').value;
     var evento = window.event || e;
-    if (evento.keyCode == 13) {
+    if (evento.keyCode == 13 && getCookie("cookieHabilitado")) {        
         document.cookie = "busqueda=" + busqueda;
         window.location.assign("busqueda.html");
+    }
+}
+
+function resultadoBusqueda() {
+    if (getCookie("cookieHabilitado")) {
+                console.log('entra3');
+        var resultados = document.getElementsByClassName('resultado');
+
+        for (var i = 0; i < resultados.length; i++) {
+            console.log(resultados[i]);
+            resultados[i].innerHTML = getCookie('busqueda');
+        }
     }
 }
 
