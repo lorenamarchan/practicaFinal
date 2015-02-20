@@ -1,0 +1,108 @@
+
+<!--
+Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+Fecha=12-dic-2014
+Licencia=gpl30
+Version=1.0
+Descripcion=Pagina Presentacion para la práctica de una Página Web de un centro de Hípica.
+-->
+
+<!--
+Copyright (C) 2014 Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Hipica Falabella | Ayuda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel=stylesheet href="css/css_Falabella.css" type="text/css">
+        <script type="text/javascript" src="js/general.js"></script>
+        <link rel="icon" href="img/falabella.ico" />
+    </head>
+    <body >
+
+        <div id="wrapper">
+            <header>
+                <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella"></a>
+                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+            </header>
+            <nav>
+                <ul id="navegador">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="catalogo.html">Actividades</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="formulario.html">Contacta</a></li>
+                </ul>
+            </nav>
+
+            <div id="migas"><a href="index.html">Inicio</a> > Ayuda</div>
+            <h2>Ayuda</h2>
+            <div id="main" class="ayuda">
+                <p> La página web Fallabela es una representacion online de la actual escuela de hipica Falabella (c) fundada en el 2014.<p>
+                <p>En esta web puedes encontrar informacion sobre el centro, su historia y su ubicacion, ademas de un resumen de todas las actividades 
+                    que se llevan a cabo y una galeria de fotos de las actividades mas reprsentativas de la escuela. Tambien cuenta con una seccion para contactar con nosotros,
+                    que es revisada a diario por lo que se garantiza una respuesta inmediata.<p>
+                    <br>
+                <h3>Acerca del Uso</h3>
+                <section>
+                    <div id="usot_1" class="flecha"><a name="usot_1" href="#usot_1" onclick="visualizar('1')">¿Como encontrar el centro? </a> </div>
+                     <div id="usod_1" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion <a href="presentacion.html">Presentacion</a>.Alli dispones de una descripcion de 
+                             la escuela, y un mapa para encontrarnos. Clicando en él te lleva a la pagina de google, para una vision mas amplia y detallada.</div>
+                </section>
+                <section>
+                    <div id="usot_2" class="flecha"><a name="usot_2" href="#usot_2" onclick="visualizar('2')">¿Como encontrar actividades disponibles? </a> </div>
+                     <div id="usod_2" class="usod">En la seccion <a href="catalogo.html">Actividades</a> tienes todas las actividades de las que disponemos, actualizadas a diario. Inicialmente 
+                        se muestra un breve resumen de cada actividad. Pulsando el boton <i>mas info</i> podrás obtener una descripcion mas completa da la actividad. Asi
+                        como opiniones de los usuarios que han participado en ellas.
+                        <br><br>Pulsando el boton <a href="formulario.html">Contratar</a> accederas a la pagina de Contacta, donde deberás rellenar el formulario correspondiente y escribir la actividad que deseas contratar</div>
+                </section>
+                <section>
+                    <div id="usot_4" class="flecha"><a name="usot_4" href="#usot_4" onclick="visualizar('4')">¿Como contratar una Actividad? </a> </div>
+                     <div id="usod_4" class="usod">Puedes ir directamente a la seccion de <a href="formulario.html">Contacta</a> y rellenar el formulario presente con la actividad que deseas contratar o si lo prefiers 
+                        puedes pulsar el boton <i>Contratar</i> que se encuentra en cada una de las actividades en la seccion <a href="catalogo.html">actividades</a>
+                        accederas a la pagina de <a href="formulario.html">Contacta</a>, donde deberás rellenar el formulario correspondiente y escribir la actividad que deseas contratar.</div>
+                </section>
+                <section>
+                    <div id="usot_5" class="flecha"><a name="usot_5" href="#usot_5" onclick="visualizar('5')">Deshabilitar Cookies </a> </div>
+                     <div id="usod_5" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion Presentacion. Alli dispones de una descripcion de 
+                        la escuela, y un mapa para encontrarnos. Clicando en él te lleva a la pagina de google, para una vision mas amplia y detallada.</div>
+                </section>
+                <section>
+                    <div id="usot_6" class="flecha"><a name="usot_6" href="#usot_6" onclick="visualizar('6')">¿Como Buscar en la Web? </a> </div>
+                     <div id="usod_6" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion Presentacion. Alli dispones de una descripcion de 
+                        la escuela, y un mapa para encontrarnos. Clicando en él te lleva a la pagina de google, para una vision mas amplia y detallada.</div>
+                </section>
+                <section>
+                    <div id="usot_7" class="flecha"><a name="usot_7" href="#usot_7" onclick="visualizar('7')">Elegir la Actividad Adecuada </a> </div>
+                     <div id="usod_7" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion Presentacion. Alli dispones de una descripcion de 
+                        la escuela, y un mapa para encontrarnos. Clicando en él te lleva a la pagina de google, para una vision mas amplia y detallada.</div>
+                </section>
+                <section>
+                    <div id="usot_8" class="flecha"><a name="usot_8" href="#usot_8" onclick="visualizar('8')">¿Donde estan las opiniones de Usuarios? </a> </div>
+                     <div id="usod_8" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion Presentacion. Alli dispones de una descripcion de 
+                        la escuela, y un mapa para encontrarnos. Clicando en él te lleva a la pagina de google, para una vision mas amplia y detallada.</div>
+                </section>
+            </div>
+            <footer>                
+                Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
+                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+            </footer>
+        </div>           
+    </body>
+</html>

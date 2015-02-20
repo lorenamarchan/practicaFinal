@@ -4,7 +4,7 @@ Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
 Fecha=06-ene-2015
 Licencia=gpl30
 Version=1.0
-Descripcion=Funciones para comprobar y validar los datos del formulario
+Descripcion=Funciones JavaScript para la galeria
 */     
 
 /* 
@@ -25,6 +25,11 @@ Descripcion=Funciones para comprobar y validar los datos del formulario
  */
 window.onload = galerias;
 
+/* nombre:      galerias
+ * descrpcion:  funcion que rellena las galerias con las imagenes a traves de arrays.
+ * parametros:  ninguno
+ * devuelve:    nada
+ */
 function galerias() {
                 var imagenesClases = ["clases1", "clases2", "clases3", "clases4", "clases5", "clases6", "clases7", "clases8", "clases9", "clases10", "clases11"];
                 var imagenesRutas = ["ruta1", "ruta2", "ruta3", "ruta4", "ruta5", "ruta6"];
