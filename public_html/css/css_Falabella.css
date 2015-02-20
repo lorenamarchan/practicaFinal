@@ -47,7 +47,7 @@ body,root,html{
 
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
-h2{ padding: 0px 0px 0px 40px; font-size: 1.857em; }
+h1{ padding: 0px 0px 0px 40px; font-size: 1.857em; }
 
 a:link{color: #70624C;}
 a:visited{color: #433333;}
