@@ -43,9 +43,6 @@ function nVentana(link) {
  * parametros:  ninguno
  * devuelve:    nada
  */
-function cerrar() {
-    window.close();
-}
 function cookies() {
     if (!getCookie("cookieHabilitado")) {
         var body = document.getElementsByTagName('body')[0];
