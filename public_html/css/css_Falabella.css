@@ -158,7 +158,7 @@ footer{
 /*Estilo donde definimos el tamano, los margenes y el color de las migas de pan */
 #migas{
     margin: 40px 0px 20px 40px;
-    font-size: 12px;                
+    font-size: 0.857em;                              
 } 
 
 /*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
@@ -209,7 +209,7 @@ footer{
 }
 .color{
     color:#C0B184;
-    font-size: 12px;
+    font-size: 0.857em;
     font-style: italic;
     cursor: default;
 }

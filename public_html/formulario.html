@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <!--
 Autor=Alvaro Camarero, Lorena Marchan, Mario Ramirez, Paul Lozano.
@@ -24,12 +25,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!DOCTYPE html>
 <html lang="es"> 
     <head>
         <title>Hipica Falabella | Contacta</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel=stylesheet href="css/css_Falabella.css">
         <script type="text/javascript" src="js/general.js"></script>
         <link rel="icon" href="img/falabella.ico" />
@@ -51,45 +50,40 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </nav>
             <div id="main">
                 <div id="migas"><a href="index.html">Inicio</a> > Contacta</div>
-                <h2>Contacte con nosotros</h2>
+                <h1>Contacte con nosotros</h1>
                 <div id="formulario">
                     <p id="intro_form">Para cualquier duda o sugerencia rellene el formulario que aparece a continuacion.<br>
                         Recuerde que todos los campos (*) tienen que estar rellenos correctamente.</p>
-                    <form id="form" action="" onsubmit="return validacion()">
+                    <form id="form" action="#" onsubmit="return validacion()">
                         <table>
+                            <caption> </caption>
                             <tr>
-                                <td>Nombre *:</td>
-                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
-                                <td class="color" >Ej: Jose</td>
+                                <td><label for="nombre">Nombre *:</label></td>
+                                <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required size="33" placeholder="Ej: Jose"><br></td>  
                             </tr>
                             <tr>
-                                <td>1º Apellido *:</td>
-                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
-                                <td class="color" >Ej: Garcia</td>
+                                <td><label for="apellidos_1">1º Apellido *:</label></td>
+                                <td><input type="text" id="apellidos_1" name="requeridos" oninput="compruebaCampos()" required size="33" placeholder="Ej: Garcia"><br></td>
                             </tr>
                             <tr>
-                                <td>2º Apellido *:</td>
-                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
-                                <td class="color" >Ej: Alonso</td>
+                                <td><label for="apellidos_2">2º Apellido *:</label></td>
+                                <td><input type="text" id="apellidos_2" name="requeridos" oninput="compruebaCampos()" required size="33" placeholder="Ej: Alonso"><br></td>
                             </tr>
                             <tr>
-                                <td>Email *:</td>
-                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
-                                <td class="color" >Ej: jose_garcia@gmail.es</td>
+                                <td><label for="email">Email *:</label></td>
+                                <td><input type="text" id="email" name="requeridos" oninput="compruebaCampos()" required size="33" placeholder="Ej: jose_garcia@gmail.es"><br></td>
                             </tr>
                             <tr>
-                                <td>Teléfono Móvil *:</td>
-                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required size="33"><br></td>
-                                <td class="color" >Ej: 660 855 966</td>
+                                <td><label for="tlf_movil">Teléfono Móvil *:</label></td>
+                                <td><input type="text" id="tlf_movil" name="requeridos" oninput="compruebaCampos()" required size="33" placeholder="Ej: 660 855 966"><br></td>
                             </tr>                            
                             <tr>
-                                <td>Teléfono Fijo:</td>
-                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" size="33"><br></td>
-                                <td class="color" >Ej: 91 255 89 56</td>
+                                <td><label for="tlf_fijo">Teléfono Fijo:</label></td>
+                                <td><input type="text" id="tlf_fijo" oninput="compruebaCampos()" size="33" placeholder="Ej: 91 255 89 65"><br></td>
                             </tr>                            
                             <tr><td>Asunto *</td>
                                 <td>
-                                    <select id="asuntos" name="requeridos" onchange="compruebaCampos()" required style="width: 265px">
+                                    <select id="asuntos" name="requeridos" title="asunto" onchange="compruebaCampos()" required style="width: 265px">
                                         <option value='' selected class="color">--Seleccione Asunto--</option>
                                         <option value='Tarifas'>Tarifas</option>
                                         <option value='Federarse'>Federarse</option>
@@ -99,20 +93,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 </td>
                             </tr>
                             <tr>
-                                <td align='left'>Comentarios *:</td>
-                                <td><textarea id="clave" name="requeridos" oninput="compruebaCampos()" rows="8" cols="35" required></textarea></td>
+                                <td>Comentarios *:</td>
+                                <td><textarea id="clave" name="requeridos" oninput="compruebaCampos()" rows="8" cols="35" 
+                                              required title="Escribe tus comentarios aquí..." ></textarea></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td><input type="checkbox" id="condiciones" onchange="activarEnviar()" disabled>
-                                    Acepta las condiciones y termminos</td>
+                                    <label for="condiciones">Acepta las condiciones y termminos</label></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td><input type='submit' id="envio" value="Enviar datos" disabled></td>
                             </tr>
                         </table>
-
                     </form>
                 </div>    
             </div>
