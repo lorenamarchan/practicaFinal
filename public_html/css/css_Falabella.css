@@ -49,33 +49,32 @@ h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
 h1{ padding: 0px 0px 0px 40px; font-size: 1.857em; }
 
-a:link{color: #70624C;}
-a:visited{color: #433333;}
+a:link{color: #433333;}
+a:visited{color: #000000;}
 a:hover{color:#C0B184;}
 footer a:hover{color:#FFFDDB;}
 
 /*En este estilo definimos el tamano, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 73em;
-    min-height: calc(100% - 2px);
+    min-height: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     background-color: #FFFDDB;
-    border: 1px #433333 solid;
-    box-shadow: 0px 0px 60px #000;
+    box-shadow: 0em 0em 3.75em #000;
     overflow: hidden;
 }
 
 #wrapperBanner{
     width:17.85em;
-    background-color: #348DC7;
-    height: calc(100% - 100px);
+    height: 100%;
     overflow: hidden;
-    position:absolute;
-    bottom: 0px;
-    right: 0px;
+    margin-left:55.13em;
+    margin-top: -12.75em;
+    bottom: 0em;
+    right: 0em;
     border-left: solid 1px #433333;
 }
 /*Estilo donde definimos el tamano, los margenes y el color de la cabezera */
@@ -145,7 +144,7 @@ footer{
     background-color: #c0B184;
     font-size: 0.928em;
     line-height: 20px;
-    color: #70624C;
+    color: #433333;
     height:auto;
     overflow: hidden;    
     text-align: center;
@@ -284,8 +283,8 @@ input[type=button],input[type=submit]{
 }
 
 input[type=button]:disabled,input[type=submit]:disabled,input[type=button]:disabled:hover,input[type=submit]:disabled:hover{
-    color: #C0B184;
-    border-color: #C0B184;
+    color: #70624C;
+    border-color: #70624C;
     background-color: #FFFDDB;
     cursor: auto;
 }
