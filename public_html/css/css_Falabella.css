@@ -401,18 +401,27 @@ article.catalogo input{float: right;font-size: 12px;}
 
 
 #busqueda{
-    position: absolute; 
-    bottom: 20px; 
-    right: 20px; 
-    width: 180px; 
+    width: 12.857em; 
     border:solid 0px;
-    /*    border: 1px solid #70624C; */
-    height: 22px; 
-    border-radius: 5px;
-    padding:2px 15px 2px 7px;
-    background: url("../img/lupa2.png") no-repeat scroll 175px 4px / auto 70% #FFFDDB;
+    height: 1.38em; 
+    border-radius: 0.31em;
+    padding:0.13em 0.94em 0.13em 0.44em;
     color: #70624C;
     font-style: italic;
+    margin-left: 30.63em;
+}
+#botonBusqueda{
+    text-align: left; 
+    height: 1.69em;
+    min-width:5.4em;
+    background: url("../img/lupa.png") #c0B184 no-repeat scroll 3.9em 0.31em / auto 60%;
+    color:#70624C;
+   margin-left: 0.63em;
+}
+#botonBusqueda:hover{   
+    color:#FFFDDB;
+    background-image: url("../img/lupa2.png");
+    background-color:  #70624C;
 }
 
 /*ESTILO PARA LA SECCION AYUDA*/

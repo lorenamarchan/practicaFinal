@@ -30,8 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #banner{
     width: 17.857em;
     height: 550px;
-    position: absolute;
-    bottom: 80px;
+    position: relative;
     overflow: hidden;
 }
 /* Estilo y animacion para el cielo */
