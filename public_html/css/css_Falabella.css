@@ -212,11 +212,11 @@ footer{
     font-style: italic;
     cursor: default;
 }
-.color::selection{
+.color:selection{
     color:#C0B184;
     background-color:rgba(0,0,0,0); 
 }
-.color::-moz-selection { /* Code for Firefox */
+.color:-moz-selection { /* Code for Firefox */
     color:#C0B184;
     background-color:rgba(0,0,0,0); 
 }
