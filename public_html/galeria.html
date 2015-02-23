@@ -26,8 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <!DOCTYPE html>
 <html lang="es"> 
-    <head>
-        <title>Hipica Falabella | Galeria</title>
+    <head>        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel=stylesheet href="css/css_Falabella.css">
@@ -36,12 +35,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <script type="text/javascript"  src="js/lightbox.js"></script>
         <script type="text/javascript" src="js/general.js"></script>
         <link rel="icon" href="img/falabella.ico" />
+        <title>Hipica Falabella | Galeria</title>
     </head>
     <body>
         <div id="wrapper">
             <header>
-                <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella" longdesc="hf.txt"></a>
-                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+                <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella" longdesc="descripcion.html"></a>
+                <input type="text" title="para enviar la consulta presiona la tecla Enter o pulsa el boton" name="busqueda" placeholder="Buscar..." id='busqueda'><input type="button" title="pulsa para enviar" name="botonBusqueda" value="Buscar" id='botonBusqueda' onclick="busca()">
             </header>
             <nav>
                 <ul id="navegador">
@@ -57,44 +57,120 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <h1>Galería de Fotos</h1> 
                 <div id="galeria">                    
                     <section>
-                        <h3>Clases de Hípica</h3> 
-                        <div class="imagen"><a href="img/galeria_img/clases1.jpg" data-lightbox="clases"><img src="img/galeria_img/clases1.jpg" alt="clases1" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases2.jpg" data-lightbox="clases"><img src="img/galeria_img/clases2.jpg" alt="clases2" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases3.jpg" data-lightbox="clases"><img src="img/galeria_img/clases3.jpg" alt="clases3" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases4.jpg" data-lightbox="clases"><img src="img/galeria_img/clases4.jpg" alt="clases4" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases5.jpg" data-lightbox="clases"><img src="img/galeria_img/clases5.jpg" alt="clases5" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases6.jpg" data-lightbox="clases"><img src="img/galeria_img/clases6.jpg" alt="clases6" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases7.jpg" data-lightbox="clases"><img src="img/galeria_img/clases7.jpg" alt="clases7" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases8.jpg" data-lightbox="clases"><img src="img/galeria_img/clases8.jpg" alt="clases8" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases9.jpg" data-lightbox="clases"><img src="img/galeria_img/clases9.jpg" alt="clases9" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases10.jpg" data-lightbox="clases"><img src="img/galeria_img/clases10.jpg" alt="clases10" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/clases11.jpg" data-lightbox="clases"><img src="img/galeria_img/clases11.jpg" alt="clases11" longdesc="hf.txt"></a></div>
+                        <h2>Clases de Hípica</h2> 
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases1.jpg" data-lightbox="clases"><img src="img/galeria_img/clases1.jpg" alt="clases1" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases2.jpg" data-lightbox="clases"><img src="img/galeria_img/clases2.jpg" alt="clases2" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases3.jpg" data-lightbox="clases"><img src="img/galeria_img/clases3.jpg" alt="clases3" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases4.jpg" data-lightbox="clases"><img src="img/galeria_img/clases4.jpg" alt="clases4" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases5.jpg" data-lightbox="clases"><img src="img/galeria_img/clases5.jpg" alt="clases5" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases6.jpg" data-lightbox="clases"><img src="img/galeria_img/clases6.jpg" alt="clases6" longdesc="descripcion.html"></a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases7.jpg" data-lightbox="clases"><img src="img/galeria_img/clases7.jpg" alt="clases7" longdesc="descripcion.html"></a></div>
+
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases8.jpg" data-lightbox="clases"><img src="img/galeria_img/clases8.jpg" alt="clases8" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases9.jpg" data-lightbox="clases"><img src="img/galeria_img/clases9.jpg" alt="clases9" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/clases10.jpg" data-lightbox="clases"><img src="img/galeria_img/clases10.jpg" alt="clases10" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td colspan="2">
+                                    <div class="imagen"><a href="img/galeria_img/clases11.jpg" data-lightbox="clases"><img src="img/galeria_img/clases11.jpg" alt="clases11" longdesc="descripcion.html"></a></div>
+                                </td>                                
+                            </tr>
+                        </table>
                     </section>
                     <section>
-                        <h3>Paseos y Rutas</h3> 
-                        <div class="imagen"><a href="img/galeria_img/ruta1.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta1.jpg" alt="ruta1" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/ruta2.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta2.jpg" alt="ruta2" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/ruta3.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta3.jpg" alt="ruta3" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/ruta4.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta4.jpg" alt="ruta4" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/ruta5.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta5.jpg" alt="ruta5" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/ruta6.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta6.jpg" alt="ruta6" longdesc="hf.txt"></a></div>
+                        <h2>Paseos y Rutas</h2> 
+                        <table>
+                            <tr>
+                                <td>                        
+                                    <div class="imagen"><a href="img/galeria_img/ruta1.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta1.jpg" alt="ruta1" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                                    <div class="imagen"><a href="img/galeria_img/ruta2.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta2.jpg" alt="ruta2" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                                    <div class="imagen"><a href="img/galeria_img/ruta3.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta3.jpg" alt="ruta3" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                                    <div class="imagen"><a href="img/galeria_img/ruta4.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta4.jpg" alt="ruta4" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                                    <div class="imagen"><a href="img/galeria_img/ruta5.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta5.jpg" alt="ruta5" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                                    <div class="imagen"><a href="img/galeria_img/ruta6.jpg" data-lightbox="ruta"><img src="img/galeria_img/ruta6.jpg" alt="ruta6" longdesc="descripcion.html"></a></div>
+                                </td>
+                            </tr>
+                        </table>
+
                     </section>
                     <section>
-                        <h3>Establecimiento</h3> 
-                        <div class="imagen"><a href="img/galeria_img/caballo1.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo1.jpg" alt="caballo1" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo2.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo2.jpg" alt="caballo2" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo3.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo3.jpg" alt="caballo3" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo4.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo4.jpg" alt="caballo4" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo5.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo5.jpg" alt="caballo5" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo6.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo6.jpg" alt="caballo6" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo7.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo7.jpg" alt="caballo7" longdesc="hf.txt"></a></div>
-                        <div class="imagen"><a href="img/galeria_img/caballo8.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo8.jpg" alt="caballo8" longdesc="hf.txt"></a></div>
+                        <h2>Establecimiento</h2> 
+                        <table>
+                            <tr>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo1.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo1.jpg" alt="caballo1" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo2.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo2.jpg" alt="caballo2" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo3.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo3.jpg" alt="caballo3" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo4.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo4.jpg" alt="caballo4" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo5.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo5.jpg" alt="caballo5" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>
+                        <div class="imagen"><a href="img/galeria_img/caballo6.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo6.jpg" alt="caballo6" longdesc="descripcion.html"></a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo7.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo7.jpg" alt="caballo7" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                        <div class="imagen"><a href="img/galeria_img/caballo8.jpg" data-lightbox="caballo"><img src="img/galeria_img/caballo8.jpg" alt="caballo8" longdesc="descripcion.html"></a></div>
+                                </td>
+                                <td>                        
+                                </td>
+                                <td>                        
+                                </td>
+                                <td>                        
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
                     </section>
                 </div>
             </div>
             <footer>                
                 Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+                <span style="font-size: 0.8em"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
         </div> 
     </body>

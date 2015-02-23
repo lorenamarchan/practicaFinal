@@ -31,9 +31,8 @@
  * parametros:  ninguno
  * devuelve:    nada
  */
-window.onload = function() {
+window.onload = function () {
     cookies();
-    document.getElementById("busqueda").onkeypress = buscar;
 };
 
 
@@ -51,11 +50,11 @@ function cookies() {
         console.log('entra1');
         var body = document.getElementsByTagName('body')[0];
         var avisoCookies = '<div id="avisoCookies"> <div id="texto">';
-        avisoCookies += 'Usamos cookies propias y de terceros para mostrar publicidad personalizada seg&uacute;n su navegaci&oacute;n. Si continua navegando consideramos que acepta el uso de cookies.';
-        avisoCookies += '<a id="aceptarCookies" onclick="aceptarCookie();"> OK </a>';
-        avisoCookies += '<a id="masInfo" href="javascript:void(0)" onclick="nVentana(\'politicacookies.html\')">M&aacute;s informaci&oacute;n</a></div>';
+        avisoCookies += 'Usamos cookies propias y de terceros para mostrar publicidad personalizada seg&uacute;n su navegaci&oacute;n. Si continua navegando consideramos que acepta el uso de cookies. ';
+        avisoCookies += ' <a id="aceptarCookies" onclick="aceptarCookie();">OK</a> ';
+        avisoCookies += '<a id="masInfo" href="javascript:void(0)" onclick="nVentana(\'politicacookies.html\')"> M&aacute;s informaci&oacute;n</a></div>';
         body.insertAdjacentHTML('afterbegin', avisoCookies);
-        document.getElementById('avisoCookies').style.height = "40px";
+        document.getElementById('avisoCookies').style.height = "55px";
     }
     else {
         if (getCookie("nombre") != "" && getCookie("apellidos_1") != "" && getCookie("apellidos_2") != "") {
@@ -194,40 +193,26 @@ function cookiesDatos() {
     }
 
 }
+
 var busqueda = "";
 
-function focusBuscar(elem) {
-    elem.value = "";
-    elem.style.color = "#433333";
-    elem.style.fontStyle = "normal";
-}
-function blurBuscar(elem) {
-    elem.value = "Buscar...";
-    elem.style.color = "#70624C";
-    elem.style.fontStyle = "italic";
-}
-
-
-function buscar(e) {
-    busqueda = document.getElementById('busqueda').value;
-    var evento = window.event || e;
-    if (evento.keyCode == 13 && getCookie("cookieHabilitado")) {        
+function busca() {
+    if (getCookie("cookieHabilitado")) {
+        busqueda = document.getElementById('busqueda').value;
         document.cookie = "busqueda=" + busqueda;
-        window.location.assign("busqueda.html");
     }
+    window.location.assign("busqueda.html");
 }
 
 function resultadoBusqueda() {
-    if (getCookie("cookieHabilitado")) {
-                console.log('entra3');
-        var resultados = document.getElementsByClassName('resultado');
-
-        for (var i = 0; i < resultados.length; i++) {
-            console.log(resultados[i]);
-            resultados[i].innerHTML = getCookie('busqueda');
-        }
+    var busq = (getCookie("cookieHabilitado")) ? getCookie('busqueda') : "";
+    var resultados = document.getElementsByClassName('resultado');
+    for (var i = 0; i < resultados.length; i++) {
+        resultados[i].innerHTML = busq;
     }
 }
+
+
 
 function getCookie(cname) {
     var name = cname + "=";

@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella"></a>
-                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+                <input type="text" title="para enviar la consulta presiona la tecla Enter o pulsa el boton" name="busqueda" placeholder="Buscar..." id='busqueda'><input type="button" title="pulsa para enviar" name="botonBusqueda" value="Buscar" id='botonBusqueda' onclick="busca()">
             </header>
             <nav>
                 <ul id="navegador">
@@ -53,17 +53,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </nav>
 
             <div id="migas"><a href="index.html">Inicio</a> > Busqueda</div>
-            <h2>Resultados de la Busqueda</h2>
+            <h1>Resultados de la Busqueda</h1>
             <div id="main" style="margin:0px 60px">
-                <h3>Resultados de Busqueda para <span class="resultado"></span>:</h3>
-                Lo siento, no ha habido resultados en la busqueda de <b><span class="resultado"></span></b>.<br>
+                <h2>Resultados de Busqueda para <span class="resultado"></span>:</h2>
+                Lo siento, no ha habido resultados en la busqueda de <span class="negrita"><span class="resultado"></span></span>.<br>
                 <a id="aGoogle" target="_blank" href="#">Buscar <span class="resultado"></span> en Google.</a>
             </div>
             <footer>                
                 Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+                <span style="font-size: 0.85em"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
         </div>   
-        <script type="text/javascript">window.onload=resultadoBusqueda();document.getElementById("busqueda").onkeypress = buscar;</script>
+        <script type="text/javascript">window.onload=resultadoBusqueda(); cookies();</script>
     </body>
 </html>

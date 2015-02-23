@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella"></a>
-                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+                <input type="text" title="para enviar la consulta presiona la tecla Enter o pulsa el boton" name="busqueda" placeholder="Buscar..." id='busqueda'><input type="button" title="pulsa para enviar" name="botonBusqueda" value="Buscar" id='botonBusqueda' onclick="busca()">
             </header>
             <nav>
                 <ul id="navegador">
@@ -52,14 +52,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </nav>
 
             <div id="migas"><a href="index.html">Inicio</a> > Ayuda</div>
-            <h2>Ayuda</h2>
+            <h1>Ayuda</h1>
             <div id="main" class="ayuda">
                 <p> La página web Fallabela es una representacion online de la actual escuela de hipica Falabella (c) fundada en el 2014.<p>
                 <p>En esta web puedes encontrar informacion sobre el centro, su historia y su ubicacion, ademas de un resumen de todas las actividades 
                     que se llevan a cabo y una galeria de fotos de las actividades mas reprsentativas de la escuela. Tambien cuenta con una seccion para contactar con nosotros,
                     que es revisada a diario por lo que se garantiza una respuesta inmediata.<p>
                     <br>
-                <h3>Acerca del Uso</h3>
+                <h2>Acerca del Uso</h2>
                 <section>
                     <div id="usot_1" class="flecha"><a name="usot_1" href="#usot_1" onclick="visualizar('1')">¿Como encontrar el centro? </a> </div>
                      <div id="usod_1" class="usod">Puedes encontrar todo acerca de la escuela fisica en la seccion <a href="presentacion.html">Presentacion</a>.Alli dispones de una descripcion de 
@@ -68,14 +68,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <section>
                     <div id="usot_2" class="flecha"><a name="usot_2" href="#usot_2" onclick="visualizar('2')">¿Como encontrar actividades disponibles? </a> </div>
                      <div id="usod_2" class="usod">En la seccion <a href="catalogo.html">Actividades</a> tienes todas las actividades de las que disponemos, actualizadas a diario. Inicialmente 
-                        se muestra un breve resumen de cada actividad. Pulsando el boton <i>mas info</i> podrás obtener una descripcion mas completa da la actividad. Asi
+                        se muestra un breve resumen de cada actividad. Pulsando el boton <span class="cursiva">mas info</span> podrás obtener una descripcion mas completa da la actividad. Asi
                         como opiniones de los usuarios que han participado en ellas.
                         <br><br>Pulsando el boton <a href="formulario.html">Contratar</a> accederas a la pagina de Contacta, donde deberás rellenar el formulario correspondiente y escribir la actividad que deseas contratar</div>
                 </section>
                 <section>
                     <div id="usot_4" class="flecha"><a name="usot_4" href="#usot_4" onclick="visualizar('4')">¿Como contratar una Actividad? </a> </div>
                      <div id="usod_4" class="usod">Puedes ir directamente a la seccion de <a href="formulario.html">Contacta</a> y rellenar el formulario presente con la actividad que deseas contratar o si lo prefiers 
-                        puedes pulsar el boton <i>Contratar</i> que se encuentra en cada una de las actividades en la seccion <a href="catalogo.html">actividades</a>
+                        puedes pulsar el boton <span class="cursiva">Contratar</span> que se encuentra en cada una de las actividades en la seccion <a href="catalogo.html">actividades</a>
                         accederas a la pagina de <a href="formulario.html">Contacta</a>, donde deberás rellenar el formulario correspondiente y escribir la actividad que deseas contratar.</div>
                 </section>
                 <section>
@@ -101,7 +101,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </div>
             <footer>                
                 Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+                <span style="font-size: 0.75em;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
         </div>           
     </body>

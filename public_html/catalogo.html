@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella"></a>
-                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+                <input type="text" title="para enviar la consulta presiona la tecla Enter o pulsa el boton" name="busqueda" placeholder="Buscar..." id='busqueda'><input type="button" title="pulsa para enviar" name="botonBusqueda" value="Buscar" id='botonBusqueda' onclick="busca()">
             </header>
             <nav>
                 <ul id="navegador">
@@ -53,10 +53,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <div id="main">
                 <div id="migas"><a href="index.html">Inicio</a> > Catálogo</div>
 
-                <h2>Catálogo de Actividades</h2>    
+                <h1>Catálogo de Actividades</h1>    
 
                 <article class="catalogo">                        
-                    <h3>Rutas a Caballo</h3>
+                    <h2>Rutas a Caballo</h2>
                     <div class="descripcion" id="art_1">
                         <div id="texto_1">
                             <p>Rutas desde dos horas, de un día entero, fin de semana o incluso varios dias tanto en la Sierra de madrid como en otros lugares de la peninsula, pernoctando en confortables hoteles y casas rurales.
@@ -65,65 +65,65 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 de las manos de nuestros expertos guias profesionales, todos estos bellos parajes, 
                                 y dsifrutar de unos momentos llenos de aventura y diversión. </p>
                             <p>La Sierra de Madrid encierra paisajes naturales de increible belleza, y una de las formas de descubrirlos y admirarlos es a lomo del caballos.</p>
-                            <p><b>tipos de ruta</b></p>
+                            <p><span class="negrita">tipos de ruta</span></p>
                             <ol>
                                 <li>Ruta de 2 horas: Recomendado para principiantes que quieren conocer el mundo de las rutas a caballo.</li>
                                 <li>Ruta de 1/2 jornada: Pensado para aficionados a la equitación, que podrán poner en práctica las nociones básicas de dominio del caballo en el campo.</li>
                                 <li>Ruta de 1 jornada: Pensado para aficionados a la equitación, que practican de forma habitual este deporte y quieren vivir la experiencia de toda una jornada a caballo.</li>
                                 <li>Rutas Largas: Las rutas que más realizamos son las de fin de semana y una semana, teniendo varias rutas programadas.</li>
                             </ol>
-                            <p><b>Opiniones de usuarios</b></p>
+                            <p><span class="negrita">Opiniones de usuarios</span></p>
                             <ul>
-                                <li><i>Maria88@hotmail.com - </i>  "A sido una experiencia inovidable, me encanta esta escuela tanto sus instalaciones como el buen ambiente..." </li>
-                                <li><i>JuanPa65@gmail.com: - </i>  "Fué una ruta espectacular</li>
-                                <li><i>LoretoRs@hotmail.com: - </i>"Me encanta esta escuela, muy buenas instalaciones y profesores, muy preparada para la practica de este deporte... </li>
+                                <li><span class="cursiva">Maria88@hotmail.com - </span>  "A sido una experiencia inovidable, me encanta esta escuela tanto sus instalaciones como el buen ambiente..." </li>
+                                <li><span class="cursiva">JuanPa65@gmail.com: - </span>  "Fué una ruta espectacular</li>
+                                <li><span class="cursiva">LoretoRs@hotmail.com: - </span>"Me encanta esta escuela, muy buenas instalaciones y profesores, muy preparada para la practica de este deporte... </li>
                             </ul><br> 
                         </div>
                     </div>
-                    <input type="button" onclick="expandir('1', this)" value="mas info">
-                    <a href="formulario.html"><input type="button"  value="contratar" class="contratar"></a>
-                    <table>
-                        <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">L-D: 9.00h - 20.00h</td><td>1h - 2h - 4h</td><td>Para todas las Edades</td><td>40€/h</td><td class="ext">Disponible</td></tr>
+                    
+                    
+                    <table summary="distinta Informacion (horario, duracion, publico, precio, disponibilidad) sobre las Rutas a Caballo">
+                        <caption>Informacion sobre las Rutas a Caballo</caption>
+                        <tr> <th scope="col" >Horario</th> <th scope="col" >Duración</th> <th scope="col" >Público</th> <th scope="col" >Precio</th> <th scope="col" >Disponibilidad</th><th scope="col"><input type="button" onclick="expandir('1', this)" value="mas info"></th></tr>
+                        <tr><td>L-D: 9.00h - 20.00h</td><td>1h - 2h - 4h</td><td>Para todas las Edades</td><td>40€/h</td><td>Disponible</td><td><a href="formulario.html">contratar</a></td></tr>
                     </table>
                 </article>   
                 <article class="catalogo">                        
-                    <h3>Hipódromo</h3>
+                    <h2>Hipódromo</h2>
                     <div class="descripcion" id="art_2">
                         <div id="texto_2">
                             <p>Nuestro hipodromo esta compuesto de arena apta para disputar carreras de caballos. 
                                 El interior tiene gradas en el perímetro, y el centro está formado de tierra o hierba. 
                                 En el centro se dispone un óvalo bordeando las gradas que forma la pista.
                                 Ideal para practicas individuales de equitacion. </p>
-                            <p><b>Nuestro óvalo de carreras cuenta con dos pistas</b></p>
+                            <p><span class="negrita">Nuestro óvalo de carreras cuenta con dos pistas</span></p>
                             <ol>
                                 <li>la interior para las prácticas de los ejemplares en el proceso de entrenamiento.</li>
                                 <li>la exterior para las prácticas finales, matutinas, aprobación y competencia.</li>
                             </ol>
                             <p>Esta pista exterior cuenta con dos (2) “chutes” o puntos de arranque para las distancias de 400 metros y 1 1/4 Milla. 
                                 Alrededor de la pista contamos con un potente sistema de alumbrado de luminarias “metal halide” para llevar a cabo carreras en la tarde y noche.</p>
-                            <p><b>Opiniones de usuarios</b></p>
+                            <p><span class="negrita">Opiniones de usuarios</span></p>
                             <ul>
-                                <li><i>luciamn1@hotmail.com - </i>  "Muy buenas instalaciones y mantenimiento" </li>
-                                <li><i>lperezrodriguez@gmail.com: - </i> "De los mejores hip&oacute;dromos que he visto"</li>
+                                <li><span class="cursiva">luciamn1@hotmail.com - </span>  "Muy buenas instalaciones y mantenimiento" </li>
+                                <li><span class="cursiva">lperezrodriguez@gmail.com: - </span> "De los mejores hip&oacute;dromos que he visto"</li>
                             </ul><br>
                         </div>
                     </div>
-                    <input type="button" onclick="expandir('2', this)" value="mas info">
-                    <a href="formulario.html"><input type="button"  value="contratar" class="contratar"></a>
-                    <table>
-                        <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">M-X-V: 12.00h - 16.00h</td><td>4 horas</td><td>Mayores de 18 años</td><td>10€/h</td><td class="ext"><strike>No Disponible</strike></td></tr>
+                    <table summary="distinta Informacion (horario, duracion, publico, precio, disponibilidad) sobre las actividades en el Hipodromo">
+                        <caption>Informacion sobre el Hipodromo</caption>
+                        <tr> <th scope="col">Horario</th> <th scope="col" >Duración</th> <th scope="col" >Público</th> <th scope="col" >Precio</th> <th scope="col">Disponibilidad</th><th scope="col"><input type="button" onclick="expandir('2', this)" value="mas info"></th></tr>
+                        <tr><td class="ext">M-X-V: 12.00h - 16.00h</td><td>4 horas</td><td>Mayores de 18 años</td><td>10€/h</td><td class="ext">No Disponible</td><td><a href="formulario.html">contratar</a></td></tr>
                     </table>
                 </article>        
                 <article class="catalogo">                      
-                    <h3>Enseñanza para Adultos</h3>
+                    <h2>Enseñanza para Adultos</h2>
                     <div class="descripcion" id="art_3">
                         <div id="texto_3">
                             <p>Damos clases de equitación particulares y en grupo para adultos. <br>
                                 Las clases siempre se imparten en grupos reducidos con un nivel de equitación similar, dependiendo del nivel. <br>
                                 Existen cuatro niveles de enseñanza: Ponis Shetland, Principiantes, Iniciados y Avanzados 
-                            <p><b>Teoría</b></p>
+                            <p><span class="negrita">Teoría</span></p>
                             <ol>
                                 <li>Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.</li>
                                 <li>Material de herraje normal y de emergencia</li>
@@ -131,34 +131,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <li>Puede estar mi caballo descalzo?? Que es el barehoof</li>
                             </ol>
 
-                            <p><b>Practica</b></p>
+                            <p><span class="negrita">Practica</span></p>
                             <ol>
                                 <li>-Como coger los miembros del caballo con seguridad</li>
                                 <li>-Desherrar y volver a clavar</li>
                             </ol>
-                            <p><b>Opiniones de usuarios</b></p>
+                            <p><span class="negrita">Opiniones de usuarios</span></p>
                             <ul>
-                                <li><i>albert86@hotmail.com - </i>  "Muy buenos profesionales" </li>
-                                <li><i>piluca_ns@gmail.com: - </i>  "En las clases se vivia muy buen ambiente, tanto con los compañeros de clase como con los profesores" </li>
-                                <li><i>claudia_l66@hotmail.com: - </i> "Aprendi mucho en las clases."</li>
+                                <li><span class="cursiva">albert86@hotmail.com - </span>  "Muy buenos profesionales" </li>
+                                <li><span class="cursiva">piluca_ns@gmail.com: - </span>  "En las clases se vivia muy buen ambiente, tanto con los compañeros de clase como con los profesores" </li>
+                                <li><span class="cursiva">claudia_l66@hotmail.com: - </span> "Aprendi mucho en las clases."</li>
                             </ul><br>
                         </div>
                     </div>
-                    <input type="button" onclick="expandir('3', this)" value="mas info">
-                    <a href="formulario.html"><input type="button"  value="contratar" class="contratar"></a>
-                    <table>
-                        <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">L-V: 18.00h - 20.00h</td><td>1h ~1h 30min</td><td>Mayores de 18 años</td><td>20€/h</td><td class="ext">Disponible</td></tr>
+                    <table  summary="distinta Informacion (horario, duracion, publico, precio, disponibilidad) sobre la Enseñanza para Adultos">
+                        <caption>Informacion sobre la Enseñanza para Adultos</caption>
+                        <tr> <th scope="col">Horario</th> <th scope="col" >Duración</th> <th scope="col" >Público</th> <th scope="col" >Precio</th> <th scope="col">Disponibilidad</th><th scope="col"><input type="button" onclick="expandir('3', this)" value="mas info"></th></tr>
+                        <tr><td class="ext">L-V: 18.00h - 20.00h</td><td>1h ~1h 30min</td><td>Mayores de 18 años</td><td>20€/h</td><td class="ext">Disponible</td><td><a href="formulario.html">contratar</a></td></tr>
                     </table>
                 </article>  
                 <article class="catalogo">                       
-                    <h3>Enseñanza para Niños Grupo 2</h3>
+                    <h2>Enseñanza para Niños Grupo 2</h2>
                     <div class="descripcion" id="art_4">
                         <div id="texto_4">
                             <p>Damos clases de equitación particulares y en grupo para niños de entre 9 y 14 años. <br>
                                 Las clases siempre se imparten en grupos reducidos con un nivel de equitación similar, dependiendo del nivel. <br>
                                 Existen cuatro niveles de enseñanza: Ponis Shetland, Principiantes, Iniciados y Avanzados. 
-                            <p><b>Teoría</b></p>
+                            <p><span class="negrita">Teoría</span></p>
                             <ol>
                                 <li>Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.</li>
                                 <li>Material de herraje normal y de emergencia</li>
@@ -166,32 +165,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <li>Puede estar mi caballo descalzo?? Que es el barehoof</li>
                             </ol>
 
-                            <p><b>Practica</b></p>
+                            <p><span class="negrita">Practica</span></p>
                             <ol>
                                 <li>-Como coger los miembros del caballo con seguridad</li>
                                 <li>-Desherrar y volver a clavar</li>
                             </ol>
-                            <p><b>Opiniones de usuarios</b></p>
+                            <p><span class="negrita">Opiniones de usuarios</span></p>
                             <ul>
-                                <li><i>ricardito_m44@hotmail.com - </i>  "Los grupos de las clases son muy reducidos, por lo que el aprendizaje es más rapido" </li>
+                                <li><span class="cursiva">ricardito_m44@hotmail.com - </span>  "Los grupos de las clases son muy reducidos, por lo que el aprendizaje es más rapido" </li>
                             </ul><br>
                         </div>
                     </div>
-                    <input type="button" onclick="expandir('4', this)" value="mas info">
-                    <a href="formulario.html"><input type="button"  value="contratar" class="contratar"></a>
-                    <table>
-                        <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">L-V: 17.00h - 18.00h</td><td>1 hora</td><td>9 a 14 años</td><td>15€/h</td><td class="ext">Disponible</td></tr>
+                    <table summary="distinta Informacion (horario, duracion, publico, precio, disponibilidad) sobre la Enseñanza para Niños Grupo 2">
+                        <caption>Informacion sobre la Enseñanza para Niños Grupo 2</caption>
+                        <tr> <th scope="col">Horario</th> <th scope="col" >Duración</th> <th scope="col" >Público</th> <th scope="col" >Precio</th> <th scope="col">Disponibilidad</th><th scope="col"><input type="button" onclick="expandir('4', this)" value="mas info"></th></tr>
+                        <tr><td class="ext">L-V: 17.00h - 18.00h</td><td>1 hora</td><td>9 a 14 años</td><td>15€/h</td><td class="ext">Disponible</td><td><a href="formulario.html">contratar</a></td></tr>
                     </table>
                 </article>   
                 <article class="catalogo">                     
-                    <h3>Enseñanza para Niños Grupo 1</h3>
+                    <h2>Enseñanza para Niños Grupo 1</h2>
                     <div class="descripcion" id="art_5">
                         <div id="texto_5">
                             <p>Damos clases de equitación particulares y en grupo para niños de entre 5 y 9 años. <br>
                                 Las clases siempre se imparten en grupos reducidos con un nivel de equitación similar, dependiendo del nivel. <br>
                                 Existen cuatro niveles de enseñanza: Ponis Shetland, Principiantes, Iniciados y Avanzados. 
-                            <p><b>Teoría</b></p>
+                            <p><span class="negrita">Teoría</span></p>
                             <ol>
                                 <li>Hipología: Anatomía del casco, Conformación, Aplomos, Principales huesos del miembro.</li>
                                 <li>Material de herraje normal y de emergencia</li>
@@ -199,31 +197,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <li>Puede estar mi caballo descalzo?? Que es el barehoof</li>
                             </ol>
 
-                            <p><b>Practica</b></p>
+                            <p><span class="negrita">Practica</span></p>
                             <ol>
                                 <li>-Como coger los miembros del caballo con seguridad</li>
                                 <li>-Desherrar y volver a clavar</li>
                             </ol>
-                            <p><b>Opiniones de usuarios</b></p>
+                            <p><span class="negrita">Opiniones de usuarios</span></p>
                             <ul>
-                                <li><i>maricarmen@yahoo.com - </i>  "Mi niño vino encantado de las clases, el año que viene repetimos!!" </li>
-                                <li><i>marisa_perez@gmail.com: - </i> "El mio tambien, pero tuvo una pequeña lesi&oacute;n en el hombro"</li>
+                                <li><span class="cursiva">maricarmen@yahoo.com - </span>  "Mi niño vino encantado de las clases, el año que viene repetimos!!" </li>
+                                <li><span class="cursiva">marisa_perez@gmail.com: - </span> "El mio tambien, pero tuvo una pequeña lesi&oacute;n en el hombro"</li>
                             </ul><br>
 
                         </div>
                     </div>
-                    <input type="button" onclick="expandir('5', this)" value="mas info">
-                    <a href="formulario.html"><input type="button"  value="contratar" class="contratar"></a>
-                    <table>
-                        <tr><th class="ext">Horario</th><th>Duración</th><th>Público</th><th>Precio</th><th class="ext">Disponibilidad</th></tr>
-                        <tr><td class="ext">L-V: 16.00h - 17.00h</td><td>1 hora</td><td>5 a 9 años</td><td>10€/h</td><td class="ext">Disponible</td></tr>
+                    <table summary="distinta Informacion (horario, duracion, publico, precio, disponibilidad) sobre la Enseñanza para Niños Grupo 1">
+                        <caption>Informacion sobre la Enseñanza para Niños Grupo 1</caption>
+                        <tr> <th scope="col">Horario</th> <th scope="col" >Duración</th> <th scope="col" >Público</th> <th scope="col" >Precio</th> <th scope="col">Disponibilidad</th><th scope="col"><input type="button" onclick="expandir('5', this)" value="mas info"></th></tr>
+                        <tr><td class="ext">L-V: 16.00h - 17.00h</td><td>1 hora</td><td>5 a 9 años</td><td>10€/h</td><td class="ext">Disponible</td><td><a href="formulario.html">contratar</a></td></tr>
                     </table>
 
                 </article> 
             </div>
             <footer>                
                 Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+                <span style="font-size: 0.8em;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
         </div>
     </body>

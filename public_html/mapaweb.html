@@ -41,7 +41,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header>
                 <a href="index.html"><img src="img/FALABELLA.png" id="logotipo" alt="Logo Falabella"></a>
-                <input type="text" title="para enviar la consulta presiona la tecla Enter" name="busqueda" value="Buscar..." id='busqueda' onclick="focusBuscar(this)" onblur="blurBuscar(this)">
+                <input type="text" title="para enviar la consulta presiona la tecla Enter o pulsa el boton" name="busqueda" placeholder="Buscar..." id='busqueda'><input type="button" title="pulsa para enviar" name="botonBusqueda" value="Buscar" id='botonBusqueda' onclick="busca()">
             </header>
             <nav>
                 <ul id="navegador">
@@ -54,39 +54,46 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </nav>
             <div id="main">
                 <div id="migas"><a href="index.html">Inicio</a> > Mapa Web</div>
-                <h2>Mapa Web</h2> 
+                <h1>Mapa Web</h1> 
                 <div id="mapaweb">
-                    <section>
-                        <h3>Inicio</h3>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>              
-                            <li><a href="presentacion.html">Presentación</a></li>
-                            <li><a href="catalogo.html">Actividades</a></li>
-                            <ul>
-                                <li style="margin-left:40px"><a href="formulario.html">Contratar Actividad</a></li>
-                            </ul>
-                            <li><a href="galeria.html">Galería</a></li>
-                            <li><a href="formulario.html">Contacta</a></li>
-                            <li><a href="busqueda.html">Busqueda</a></li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Pie de Página</h3>
-                        <ul>
-                            <li><a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a></li>
-                            <li><a href="#">Política de Cookies</a></li>
-                            <li><a href="formulario.html">Contacta con Nosotros</a></li>
-                            <li><a href="ayuda.html">Ayuda</a></li>
-                            <li><a href="mapaweb.html">Mapa Web</a></li>
-                        </ul>
-                    </section>                    
+                    <table>
+                        <tr><td>
+                                <section>
+
+                                    <h2>Inicio</h2>
+                                    <ul>
+                                        <li><a href="index.html">Inicio</a></li>              
+                                        <li><a href="presentacion.html">Presentación</a></li>
+                                        <li><a href="catalogo.html">Actividades</a></li>
+                                        <ul>
+                                            <li style="margin-left:40px"><a href="formulario.html">Contratar Actividad</a></li>
+                                        </ul>
+                                        <li><a href="galeria.html">Galería</a></li>
+                                        <li><a href="formulario.html">Contacta</a></li>
+                                        <li><a href="busqueda.html">Busqueda</a></li>
+                                    </ul>
+                                </section>
+                            </td>
+                            <td>
+                                <section>
+                                    <h2>Pie de Página</h2>
+                                    <ul>
+                                        <li><a href="javascript:void(0)" onclick="nVentana()">Términos de Licencia</a></li>
+                                        <li><a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a></li>
+                                        <li><a href="formulario.html">Contacta con Nosotros</a></li>
+                                        <li><a href="ayuda.html">Ayuda</a></li>
+                                        <li><a href="mapaweb.html">Mapa Web</a></li>
+                                    </ul>
+                                </section> 
+                            </td></tr>
+                    </table>
                 </div>
             </div>
             <footer>                
                 Hipica Falabella © 2015. Todos los Derechos Reservados. <br>Creado por: Alvaro Camarero, Paul Lozano, Lorena Marchan, Mario Ramirez.<br>
-                <span style="font-size: 12px;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
+                <span style="font-size: 0.8em;"><a href="javascript:void(0)" onclick="nVentana('licencia.html')">Términos de Licencia</a> | <a href="javascript:void(0)" onclick="nVentana('politicacookies.html')">Política de Cookies</a> | <a href="formulario.html">Contacta con Nosotros</a> | <a href="ayuda.html">Ayuda</a> | <a href="mapaweb.html">Mapa Web</a></span>
             </footer>
         </div> 
-        
+
     </body>
 </html>
