@@ -57,7 +57,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         Recuerde que todos los campos (*) tienen que estar rellenos correctamente.</p>
                     <form id="form" action="#" onsubmit="return validacion()">
                         <table>
-                            <caption> </caption>
                             <tr>
                                 <td><label for="nombre">Nombre *:</label></td>
                                 <td><input type="text" id="nombre" name="requeridos" oninput="compruebaCampos()" required="required" size="33" placeholder="Ej: Jose"><br></td>  
@@ -84,7 +83,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             </tr>                            
                             <tr><td>Asunto *</td>
                                 <td>
-                                    <select id="asuntos" name="requeridos" title="asunto" onchange="compruebaCampos()" required="required" style="width: 265px">
+                                    <select id="asuntos" name="requeridos" title="asunto" onchange="compruebaCampos()" required="required" style="width: 200px">
                                         <option value='' selected="selected" class="color">--Seleccione Asunto--</option>
                                         <option value='Tarifas'>Tarifas</option>
                                         <option value='Federarse'>Federarse</option>
@@ -95,7 +94,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             </tr>
                             <tr>
                                 <td>Comentarios *:</td>
-                                <td><textarea id="clave" name="requeridos" oninput="compruebaCampos()" rows="8" cols="35" 
+                                <td><textarea id="clave" name="requeridos" oninput="compruebaCampos()" rows="8" cols="42" 
                                               required="required" title="Escribe tus comentarios aquí..." ></textarea></td>
                             </tr>
                             <tr>

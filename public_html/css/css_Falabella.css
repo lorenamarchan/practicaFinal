@@ -321,10 +321,12 @@ textarea{
 /* Estilo que define, la alineacion, el tipo de letra, el ancho del texto. */
 #texto_presentacion{
     font-family: general;
-    margin-left: 3.75em;
+    margin: 0 4em 3.75em 4em;
     width: 25.00em;
     padding-bottom: 1.25em;
     padding-right: 3.13em;
+    float: left;
+    
 }
 
 /*ESTILO PARA EL CATALOGO*/
