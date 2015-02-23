@@ -47,7 +47,8 @@ body,root,html{
 
 h1,h2,h3,h4,h5,h6{font-family: titulos;color: #433333;}
 
-h1{ padding: 0px 0px 0px 40px; font-size: 1.857em; }
+h1{ padding: 0em 0em 0em 2.50em; font-size: 1.4em; }
+h2{font-size: 1.2em}
 
 a:link{color: #70624C;}
 a:visited{color: #433333;}
@@ -57,25 +58,24 @@ footer a:hover{color:#FFFDDB;}
 /*En este estilo definimos el tamano, los margenes, y la alineacion del lienzo */
 #wrapper{
     width: 73em;
-    min-height: calc(100% - 2px);
+    min-height: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     background-color: #FFFDDB;
-    border: 1px #433333 solid;
-    box-shadow: 0px 0px 60px #000;
+    box-shadow: 0em 0em 3.75em #000;
     overflow: hidden;
 }
 
 #wrapperBanner{
     width:17.85em;
-    background-color: #348DC7;
-    height: calc(100% - 100px);
+    height: 100%;
     overflow: hidden;
-    position:absolute;
-    bottom: 0px;
-    right: 0px;
+    margin-left:55.13em;
+    margin-top: -12.75em;
+    bottom: 0em;
+    right: 0em;
     border-left: solid 1px #433333;
 }
 /*Estilo donde definimos el tamano, los margenes y el color de la cabezera */
@@ -118,7 +118,7 @@ ul#navegador li {
 }
 /*Caracteristicas de cada elemento de la lista*/
 ul#navegador li a {
-    padding: 10px 35px 10px 35px;
+    padding: 0.35em 2em;
     display:block;
     text-decoration:none;
     color: #FFFDDB;
@@ -143,8 +143,8 @@ footer{
     bottom: 0px;
     width: 100%;
     background-color: #c0B184;
-    font-size: 0.928em;
-    line-height: 20px;
+    font-size: 0.85em;
+    line-height: 1.25em;
     color: #70624C;
     height:auto;
     overflow: hidden;    
@@ -157,29 +157,29 @@ footer{
 
 /*Estilo donde definimos el tamano, los margenes y el color de las migas de pan */
 #migas{
-    margin: 40px 0px 20px 40px;
-    font-size: 0.857em;                              
+    margin: 2.50em 0em 1.25em 2.50em;
+    font-size: 0.85em;                
 } 
 
 /*Estilo donde definimos el tamano, los margenes y el color de la barra de navegacion */
 #main{
     width: 73.142em;;
-    min-height: 350px;
+    min-height: 21.88em;
     height: 100%;
-    padding-bottom: 100px; 
+    padding-bottom: 4.2em; 
 }
 
 /*ESTILO PARA EL INDEX*/
 
 /*Posicion para el titulo del index*/
 #titulo_inicio{    
-    margin: 60px 0 0 40px;
+    margin: 1.5em 0 0 1em;
     padding: 0;
     font-size: 2.6em;
 }
 /*Posicion para el subtitulo del index*/
 #subtitulo_inicio{
-    margin-left: 60px;
+    margin-left: 3em;
     padding: 0;
     font-size: 2em;
 }
@@ -197,19 +197,19 @@ footer{
 /*Estilo para el formulario*/
 #formulario{
     width: 60%;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 3.75em;
 }
 /*Posicion para la introducion del formulario*/
 #intro_form{
-    padding: 0px 0 10px 0;
+    padding: 0em 0 0.63em 0;
 }
 /*Margen del formulario*/
 #form{
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 .color{
     color:#C0B184;
-    font-size: 0.857em;
+    font-size: 0.75em;
     font-style: italic;
     cursor: default;
 }
@@ -227,27 +227,26 @@ footer{
 
 /*Estilo donde definimos el tamano, los margenes y el color de la pagina de galeria */
 
-#galeria{margin: -30px 60px 60px 60px}                             
+#galeria{margin: 0em 3.75em 3.75em 3.75em}                             
 #galeria section{overflow: hidden;}
-#galeria section h3{
+#galeria section h2{
     border-bottom: solid 1px;
-    margin: 40px 0px 15px 0px;
+    margin: 2.50em 0em 0.94em 0em;
     color: #70624C;
 }
 /*Estilo donde definimos el tamano, los margenes y el color de la pagina de galeria */
 #galeria section div{
     position: relative;
     width: 85%;
-    margin: 30px auto;
+    margin: 1.88em auto;
     height:auto;
     overflow: hidden;
 }
 /*Estilo de las imagenes de la galeria */
 #galeria section .imagen{   
-    float: left;
-    width: 120px;
-    height:120px; 
-    margin: 5px;
+    width: 8.571em;
+    height: 8.571em;
+    margin: 0.31em;
     overflow: hidden;
     border: solid 5px #c0B184;
     transition: border 1s, opacity 1s;
@@ -264,23 +263,38 @@ footer{
     height: auto;
 }
 /*estilo para los botones de tipo input*/
-input[type=button],input[type=submit]{
+input[type=button],input[type=submit], .catalogo a{
     background-color: #FFFDDB;
     color: #70624C;
     border: solid 2px #70624C;
-    border-radius: 7px;
-    min-width: 80px;
-    height: 30px;
+    border-radius: 0.44em;
+    min-width: 6em;
+    height: 2.2em;
     cursor: pointer;
-    margin-top: 9px;
     font-family: 'general';
-
 } 
+.catalogo a{
+    font-size: 0.75em;
+    text-decoration: none;
+    padding: 0.22em 0.81em;
+}
+caption{
+    font-style: italic; 
+    font-size: 0.88em; 
+    padding: 0.63em;
+}
+#galeria caption{text-align: left;}
+.cursiva{
+    font-style: italic;
+}
+.negrita{
+    font-weight: bold;
+}
 #formulario input[type=text]{
     width:100%;
 }
 #formulario tr:first-child{
-    width:200px;
+    width:12.5em;
 }
 
 input[type=button]:disabled,input[type=submit]:disabled,input[type=button]:disabled:hover,input[type=submit]:disabled:hover{
@@ -290,15 +304,15 @@ input[type=button]:disabled,input[type=submit]:disabled,input[type=button]:disab
     cursor: auto;
 }
 
-input[type=button]:hover,input[type=submit]:hover{
+input[type=button]:hover,input[type=submit]:hover, .catalogo a:hover{
     background-color: #70624C;
     color: #FFFDDB;
 }
 
 input[type=text],select, textarea{
     border: solid 1px #C0B184;
-    padding: 3px 0px;
-    border-radius: 2px;
+    padding: 0.2em 0em;
+    border-radius: 0.13em;
 }
 textarea{
     resize: vertical;
@@ -314,28 +328,6 @@ textarea{
     width: 400px;
     padding-bottom: 20px;
     padding-right: 50px;
-}
-/* Estilo de la imagen y animacion del caballo en presentacion */
-#CaballoDer{
-    float: right;
-    background-size: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    margin-right: 150px;
-    width: 300px;
-    height: 350px;
-    background-image: url('../img/caballos.png');
-    -webkit-animation: AnimacionCaballoDer 4s;
-    animation: AnimacionCaballoDer 4s; /*para FireFox*/
-    transform: scaleX(-1);
-}
-@-webkit-keyframes AnimacionCaballoDer {
-    0%   {opacity: 0.1}
-    100% {opacity: 1 }
-}
-@keyframes AnimacionCaballoDer {  /*para FireFox*/
-    0% {opacity: 0.1}
-    100%{opacity: 1 }
 }
 
 /*ESTILO PARA EL CATALOGO*/
